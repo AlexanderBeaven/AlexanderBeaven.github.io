@@ -129,12 +129,17 @@
         }
        input
        {
-           margin-left: 10px;
-           margin-right: 10px;
+           margin-left: auto;
+           margin-right: auto;
            border-color: lightsalmon;
            border-bottom-style: solid;
            border-width: medium;
             font-family: Verdana, Helvetica, sans-serif;       
+        }
+        input.radial
+       {
+           margin-left: 15px;
+           margin-right: 5px;    
         }
        select{
            margin-left: 5px;
@@ -231,10 +236,10 @@
             <br />
             <em> Preferred Contact Method: </em><br />
             <label>Email:
-                <input type="radio" name="method" />
+                <input class="radial" type="radio" name="method" />
             </label>
             <label>Phone:
-                <input type="radio" name="method" />
+                <input class="radial" type="radio" name="method" />
             </label>
             <br />
             <br />
