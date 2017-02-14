@@ -20,6 +20,11 @@
             font-family: spaceman;
             src: url(fonts/SPACEMAN.ttf);
         }
+
+        p{           
+            color: #D5C5C8;
+            font-family: Verdana, Helvetica, sans-serif;
+        }
        
         body 
         {
