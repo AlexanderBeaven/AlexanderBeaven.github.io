@@ -76,7 +76,12 @@
              border-color: lightsalmon;
         }
 
-         img
+         img.title
+         {
+            
+         }
+
+          img.picture
          {
              border: 3px ridge;
              border-color: salmon;
