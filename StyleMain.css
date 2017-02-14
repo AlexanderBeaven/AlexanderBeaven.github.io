@@ -52,11 +52,20 @@
             font-family: Verdana, Helvetica, sans-serif;
         }
 
-        h3 
+        h3.second
         {
             margin-top: 10px;
             margin-bottom: 10px;
             color: #8BBF9F;
+            font-size: large;
+            font-family: Verdana, Helvetica, sans-serif;
+        }
+
+         h3.first 
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: white;
             font-size: large;
             font-family: Verdana, Helvetica, sans-serif;
         }
