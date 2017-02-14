@@ -72,14 +72,14 @@
 
         td
         {
-             border: 4px ridge;
+             border: 4px solid;
              border-bottom: none;
              border-color: #857E7B;
         }
 
          th
          {
-             border: 4px ridge;
+             border: 4px solid;
              border-top: none;
              border-bottom: none;
              border-color: #857E7B;
@@ -92,7 +92,7 @@
 
           img.picture
          {
-             border: 3px ridge;
+             border: 3px solid;
              border-color: #59344F;
          }
 
@@ -106,7 +106,7 @@
             width: 1024px;
             padding-left: 15px;
             padding-right: 15px;
-            border: 4px ridge;
+            border: 4px solid;
             border-color: #857E7B;
             border-radius: 12px;
             color: white;
