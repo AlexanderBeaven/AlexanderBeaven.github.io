@@ -32,11 +32,11 @@
         {  
            -webkit-transition-duration: 0.4s; 
            font-size:larger;
-           background-color: mediumpurple;
+           background-color: #9CAFB7;
            color: white;
            border-radius: 8px;
            border-style:solid;
-           border-color:mediumpurple;          
+           border-color:#9CAFB7;          
            padding: 5px 7px;    
            text-align:center;
         }
@@ -45,11 +45,11 @@
         {
            -webkit-transition-duration: 0.4s; 
            font-size:larger;
-           background-color: rebeccapurple;
+           background-color: #EF959D;
            color: white;
            border-radius: 8px;
            border-style:solid;
-           border-color:rebeccapurple;
+           border-color:#EF959D;
            padding: 5px 15px;
            text-align:center;
         }
@@ -62,23 +62,23 @@
         input.button1:hover
         {
             background-color:white;
-            color:mediumpurple;
+            color:#9CAFB7;
             border-style:solid;
-            border-color:mediumpurple;
+            border-color:#9CAFB7;
         }
         input.button2:hover
         {
            background-color:white;
-           color:rebeccapurple;
+           color:#EF959D;
            border-style:solid;
-           border-color:rebeccapurple;           
+           border-color:#EF959D;           
         }
        input
        {
            margin-left: auto;
            margin-right: auto;
-           border-color: rebeccapurple;
-           border-bottom-style: ridge;
+           border-color: #EF959D;
+           border-bottom-style: solid;
            border-width: medium;
            font-family: Verdana, Helvetica, sans-serif;       
         }
@@ -93,8 +93,8 @@
            margin-left: 5px;
            margin-right: 5px;
            font-family: Verdana, Helvetica, sans-serif;
-           border-color: rebeccapurple;
-           border-bottom-style: ridge;
+           border-color: #EF959D;
+           border-bottom-style: solid;
            border-width: medium;
        }
 
@@ -103,8 +103,8 @@
            margin-left:auto;
            margin-right:auto;
            width: 90%;
-           border-color: rebeccapurple;
-           border-bottom-style: ridge;
+           border-color: #EF959D;
+           border-bottom-style: solid;
            border-width: medium;
            font-family: Verdana, Helvetica, sans-serif; 
        }      
@@ -120,8 +120,8 @@
             width: 800px;
             padding-left: 5px;
             padding-right: 5px;
-            border: 2px ridge;
-            border-color: mediumpurple;
+            border: 2px solid;
+            border-color: #9CAFB7;
             border-width:medium;
             border-radius: 12px;
             color: white;
