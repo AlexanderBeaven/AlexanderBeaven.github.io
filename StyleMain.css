@@ -47,6 +47,13 @@
             background-repeat: no-repeat;
             background-size: cover;
         }  
+
+         body.products 
+        {
+            background-image: url(images/indexbackground2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  
         
          input.button1
         {  
