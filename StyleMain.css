@@ -34,12 +34,19 @@
             font-family: Verdana, Helvetica, sans-serif;
         }
        
-        body 
+        body.main 
         {
             background-image: url(images/indexbackground.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-        } 
+        }
+        
+         body.secondary 
+        {
+            background-image: url(images/indexbackground2b.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  
         
          input.button1
         {  
