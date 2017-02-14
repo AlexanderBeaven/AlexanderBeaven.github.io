@@ -1,20 +1,28 @@
 ﻿        a:link
         {
-            color:lightblue;
+            color: #E6EFE9;
         }
         a:visited
         {
-            color:lightgray;
+            color:#E6EFE9;
         }
         a:hover
         {
-            color:#F0B67F;
+            color:#EF959D;
         }
         a:active
         {
-            color:#EEF5DB;
+            color:#E6EFE9;
         }
        
+         a 
+        {
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #E6EFE9;
+            font-size: large;
+            font-family: Verdana, Helvetica, sans-serif;
+        }
         @font-face 
         {
             font-family: spaceman;
@@ -133,15 +141,6 @@
             text-align: center;
             font-family: Verdana, Helvetica, sans-serif;
         }      
-
-        a 
-        {
-            padding-left: 15px;
-            padding-right: 15px;
-            color: #C7EFCF;
-            font-size: large;
-            font-family: Verdana, Helvetica, sans-serif;
-        }
 
         h1 
         {
