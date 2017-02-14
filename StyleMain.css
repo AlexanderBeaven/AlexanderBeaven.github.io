@@ -48,7 +48,7 @@
         {
             margin-top: 15px;
             margin-bottom: 15px;
-            color: #ABE188;
+            color: #8BBF9F;
             font-family: Verdana, Helvetica, sans-serif;
         }
 
@@ -56,7 +56,7 @@
         {
             margin-top: 10px;
             margin-bottom: 10px;
-            color: #F7EF99;
+            color: #F5E0B7;
             font-size: large;
             font-family: Verdana, Helvetica, sans-serif;
         }
@@ -65,7 +65,7 @@
         {
              border: 4px ridge;
              border-bottom: none;
-             border-color: lightsalmon;
+             border-color: #857E7B;
         }
 
          th
@@ -73,7 +73,7 @@
              border: 4px ridge;
              border-top: none;
              border-bottom: none;
-             border-color: lightsalmon;
+             border-color: #857E7B;
         }
 
          img.title
@@ -84,7 +84,7 @@
           img.picture
          {
              border: 3px ridge;
-             border-color: #F78E69;
+             border-color: #59344F;
          }
 
         table 
@@ -98,7 +98,7 @@
             padding-left: 15px;
             padding-right: 15px;
             border: 4px ridge;
-            border-color: #5D675B;
+            border-color: #857E7B;
             border-radius: 12px;
             color: white;
             text-align: center;
