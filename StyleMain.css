@@ -224,7 +224,11 @@
             font-family: Verdana, Helvetica, sans-serif;
         }
 
-         h2 
+       label
+       {
+            color: #D8D8F6;
+       }
+       h2 
        {
            color: #7AE7C7;
            border-color: #7AE7C7;
