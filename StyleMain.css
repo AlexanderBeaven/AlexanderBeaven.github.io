@@ -241,7 +241,11 @@
        {
             border-color: #D782BA;
        }
-       h3.second, form 
+       h3.second 
        {
             color: #EF959D;
+       }
+       form
+       {
+           border-color: #EF959D;
        }
