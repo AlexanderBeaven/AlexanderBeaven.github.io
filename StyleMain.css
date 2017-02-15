@@ -11,7 +11,6 @@
         
         a 
         {
-            -webkit-transition-duration: 0.4s; 
             padding-left: 7px;
             padding-right: 7px;
             color: #D8D8F6;
@@ -58,7 +57,6 @@
         
          input.button1
         {  
-           -webkit-transition-duration: 0.4s; 
            font-size:larger;
            background-color: #8DA1B9;
            color: #D8D8F6;
@@ -71,7 +69,6 @@
          
         input.button2
         {
-           -webkit-transition-duration: 0.4s; 
            font-size:larger;
            background-color: #8DA1B9;
            color: #D8D8F6;
@@ -81,7 +78,11 @@
            padding: 5px 15px;
            text-align:center;
         }
-        
+
+        a, input.button1, input.button2 
+        {
+        -webkit-transition-duration: 0.4s;       
+        }
         label
         {
             font-family: Verdana, Helvetica, sans-serif;
