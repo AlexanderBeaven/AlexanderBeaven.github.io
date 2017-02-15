@@ -1,6 +1,4 @@
-﻿      
-      
-       
+﻿       
          a:visited,  a:active
         {
             color:#D8D8F6;  
@@ -72,11 +70,11 @@
         {
            -webkit-transition-duration: 0.4s; 
            font-size:larger;
-           background-color: #EF959D;
+           background-color: #8DA1B9;
            color: white;
            border-radius: 8px;
            border-style:solid;
-           border-color:#EF959D;
+           border-color:#8DA1B9;
            padding: 5px 15px;
            text-align:center;
         }
@@ -96,9 +94,9 @@
         input.button2:hover
         {
            background-color:white;
-           color:#EF959D;
+           color:#8DA1B9;
            border-style:solid;
-           border-color:#EF959D;           
+           border-color:#8DA1B9;           
         }
        input
        {
