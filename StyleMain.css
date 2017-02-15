@@ -72,11 +72,11 @@
         {
            -webkit-transition-duration: 0.4s; 
            font-size:larger;
-           background-color: #D782BA;
+           background-color: #EF959D;
            color: white;
            border-radius: 8px;
            border-style:solid;
-           border-color:#D782BA;
+           border-color:#EF959D;
            padding: 5px 15px;
            text-align:center;
         }
@@ -96,9 +96,9 @@
         input.button2:hover
         {
            background-color:white;
-           color:#D782BA;
+           color:#EF959D;
            border-style:solid;
-           border-color:#D782BA;           
+           border-color:#EF959D;           
         }
        input
        {
@@ -246,7 +246,7 @@
 
        input, select, textarea
        {
-           border-color: #EF959D;
+           border-color: #D8D8F6;
 
        }
        form
