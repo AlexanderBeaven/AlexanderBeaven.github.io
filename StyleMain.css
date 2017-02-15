@@ -224,7 +224,7 @@
             font-family: Verdana, Helvetica, sans-serif;
         }
 
-         h2, form 
+         h2 
        {
            color: #7AE7C7;
            border-color: #7AE7C7;
@@ -239,7 +239,7 @@
        {
             border-color: #D782BA;
        }
-       h3.second 
+       h3.second, form 
        {
             color: #EF959D;
        }
