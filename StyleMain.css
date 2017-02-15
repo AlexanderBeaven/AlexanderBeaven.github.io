@@ -12,7 +12,7 @@
        
        img.picture
        {
-            border-color: #69585F;
+            border-color: #D782BA;
        }
        h3.second 
        {
@@ -87,11 +87,11 @@
         {
            -webkit-transition-duration: 0.4s; 
            font-size:larger;
-           background-color: #69585F;
+           background-color: #D782BA;
            color: white;
            border-radius: 8px;
            border-style:solid;
-           border-color:#69585F;
+           border-color:#D782BA;
            padding: 5px 15px;
            text-align:center;
         }
@@ -111,9 +111,9 @@
         input.button2:hover
         {
            background-color:white;
-           color:#69585F;
+           color:#D782BA;
            border-style:solid;
-           border-color:#69585F;           
+           border-color:#D782BA;           
         }
        input
        {
