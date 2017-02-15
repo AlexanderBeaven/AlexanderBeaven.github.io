@@ -72,11 +72,11 @@
         {
            -webkit-transition-duration: 0.4s; 
            font-size:larger;
-           background-color: #EF959D;
+           background-color: #7AE7C7;
            color: white;
            border-radius: 8px;
            border-style:solid;
-           border-color:#EF959D;
+           border-color:#7AE7C7;
            padding: 5px 15px;
            text-align:center;
         }
@@ -96,15 +96,15 @@
         input.button2:hover
         {
            background-color:white;
-           color:#EF959D;
+           color:#7AE7C7;
            border-style:solid;
-           border-color:#EF959D;           
+           border-color:#7AE7C7;           
         }
        input
        {
            margin-left: auto;
            margin-right: auto;
-           border-color: #EF959D;
+           border-color: #7AE7C7;
            border-bottom-style: solid;
            border-width: medium;
            font-family: Verdana, Helvetica, sans-serif;       
@@ -120,7 +120,7 @@
            margin-left: 5px;
            margin-right: 5px;
            font-family: Verdana, Helvetica, sans-serif;
-           border-color: #EF959D;
+           border-color: #7AE7C7;
            border-bottom-style: solid;
            border-width: medium;
        }
@@ -130,7 +130,7 @@
            margin-left:auto;
            margin-right:auto;
            width: 90%;
-           border-color: #EF959D;
+           border-color: #7AE7C7;
            border-bottom-style: solid;
            border-width: medium;
            font-family: Verdana, Helvetica, sans-serif; 
