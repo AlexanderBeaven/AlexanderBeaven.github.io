@@ -2,13 +2,15 @@
          a:visited,  a:active
         {
             color:#D8D8F6;  
-             background-color: #8DA1B9;      
+             background-color: #8DA1B9;
+             border-color:#7AE7C7;     
         }
         
          a:hover, a:link
         {
             color:#D8D8F6;
             background-color: #7AE7C7;
+            border-color:#7AE7C7;
             border: solid 2px;
             border-radius: 4px
         }             
