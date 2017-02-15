@@ -193,7 +193,7 @@
         {
              border: 4px solid;
              border-bottom: none;
-             border-color: #9CAFB7;
+             border-color: #8DA1B9;
         }
 
          th
@@ -201,7 +201,7 @@
              border: 4px solid;
              border-top: none;
              border-bottom: none;
-             border-color: #9CAFB7;
+             border-color: #8DA1B9;
         }
 
          img.title
@@ -226,7 +226,7 @@
             padding-left: 15px;
             padding-right: 15px;
             border: 4px solid;
-            border-color: #9CAFB7;
+            border-color: #8DA1B9;
             border-radius: 12px;
             color: white;
             text-align: center;
