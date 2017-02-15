@@ -232,8 +232,7 @@
 
        hr
        {
-            color: #D8D8F6;
-            border-color: #D8D8F6;
+           border: 2px solid #D8D8F6;
        }
        
        h2 
