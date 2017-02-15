@@ -1,23 +1,5 @@
 ﻿      
-       h2, form 
-       {
-           color: #7AE7C7;
-           border-color: #7AE7C7;
-       }  
-       
-       td, th, table
-       {
-           border-color: #8DA1B9;
-       }  
-       
-       img.picture
-       {
-            border-color: #D782BA;
-       }
-       h3.second 
-       {
-            color: #EF959D;
-       }
+      
        
          a:visited,  a:active
         {
@@ -241,3 +223,23 @@
             text-align: center;
             font-family: Verdana, Helvetica, sans-serif;
         }
+
+         h2, form 
+       {
+           color: #7AE7C7;
+           border-color: #7AE7C7;
+       }  
+       
+       td, th, table
+       {
+           border-color: #8DA1B9;
+       }  
+       
+       img.picture
+       {
+            border-color: #D782BA;
+       }
+       h3.second 
+       {
+            color: #EF959D;
+       }
