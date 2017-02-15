@@ -225,10 +225,17 @@
             font-family: Verdana, Helvetica, sans-serif;
         }
 
-       label, h3.first, hr
+       label, h3.first
        {
             color: #D8D8F6;
        }
+
+       hr
+       {
+            color: #D8D8F6;
+            border-color: #D8D8F6;
+       }
+       
        h2 
        {
            color: #7AE7C7;
