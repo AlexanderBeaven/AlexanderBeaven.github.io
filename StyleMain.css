@@ -1,26 +1,23 @@
 ﻿       
          a:visited,  a:active
-        {
-            color:#D8D8F6;  
-             background-color: #8DA1B9;
-             border-color:#7AE7C7;     
+        {           
+             background-color: #8DA1B9;    
         }
         
          a:hover, a:link
-        {
-            color:#D8D8F6;
-            background-color: #7AE7C7;
-            border-color:#7AE7C7;
-            border: solid 2px;
-            border-radius: 4px
+        {           
+            background-color: #7AE7C7;          
         }             
         
         a 
         {
+             -webkit-transition-duration: 0.4s; 
             padding-left: 7px;
             padding-right: 7px;
             color: #D8D8F6;
             background-color: #8DA1B9;
+             border: solid 2px;
+            border-radius: 4px;
             border-color: #7AE7C7;
             font-size: large;
             font-family: Verdana, Helvetica, sans-serif;
