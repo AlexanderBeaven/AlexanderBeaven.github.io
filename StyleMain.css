@@ -72,11 +72,11 @@
         {
            -webkit-transition-duration: 0.4s; 
            font-size:larger;
-           background-color: #7AE7C7;
+           background-color: #69585F;
            color: white;
            border-radius: 8px;
            border-style:solid;
-           border-color:#7AE7C7;
+           border-color:#69585F;
            padding: 5px 15px;
            text-align:center;
         }
@@ -96,9 +96,9 @@
         input.button2:hover
         {
            background-color:white;
-           color:#7AE7C7;
+           color:#69585F;
            border-style:solid;
-           border-color:#7AE7C7;           
+           border-color:#69585F;           
         }
        input
        {
