@@ -1,19 +1,14 @@
-﻿        a:link
+﻿      
+        a:visited,  a:active
         {
-            color: #D8D8F6;
+            color:#D8D8F6;        
         }
-        a:visited
-        {
-            color:#D8D8F6;
-        }
-        a:hover
+        a:hover, a:link
         {
             color:#EF959D;
-        }
-        a:active
-        {
-            color:#D8D8F6;
-        }
+            border: solid 1px;
+            border-radius: 4px
+        }       
        
          a 
         {
