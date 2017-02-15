@@ -224,7 +224,7 @@
             font-family: Verdana, Helvetica, sans-serif;
         }
 
-       label
+       label, h3.first
        {
             color: #D8D8F6;
        }
