@@ -8,6 +8,7 @@
         a:hover, a:link
         {
             color:#EF959D;
+            background-color: #7AE7C7;
             border: solid 1px;
             border-radius: 4px
         }             
@@ -16,6 +17,7 @@
             padding-left: 7px;
             padding-right: 7px;
             color: #D8D8F6;
+            background-color: #D782BA;
             font-size: large;
             font-family: Verdana, Helvetica, sans-serif;
             text-decoration:none;
