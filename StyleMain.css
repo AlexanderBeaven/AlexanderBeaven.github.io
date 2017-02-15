@@ -103,7 +103,6 @@
        {
            margin-left: auto;
            margin-right: auto;
-           border-color: #7AE7C7;
            border-bottom-style: solid;
            border-width: medium;
            font-family: Verdana, Helvetica, sans-serif;       
@@ -119,7 +118,6 @@
            margin-left: 5px;
            margin-right: 5px;
            font-family: Verdana, Helvetica, sans-serif;
-           border-color: #7AE7C7;
            border-bottom-style: solid;
            border-width: medium;
        }
@@ -129,7 +127,6 @@
            margin-left:auto;
            margin-right:auto;
            width: 90%;
-           border-color: #7AE7C7;
            border-bottom-style: solid;
            border-width: medium;
            font-family: Verdana, Helvetica, sans-serif; 
@@ -245,7 +242,13 @@
        {
             color: #EF959D;
        }
-       form
+
+       input, select, textarea
        {
            border-color: #EF959D;
+
+       }
+       form
+       {
+           border-color: #7AE7C7;
        }
