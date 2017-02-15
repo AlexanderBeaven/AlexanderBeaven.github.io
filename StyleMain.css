@@ -1,10 +1,10 @@
 ﻿        a:link
         {
-            color: #E6EFE9;
+            color: #D8D8F6;
         }
         a:visited
         {
-            color:#E6EFE9;
+            color:#D8D8F6;
         }
         a:hover
         {
@@ -12,14 +12,14 @@
         }
         a:active
         {
-            color:#E6EFE9;
+            color:#D8D8F6;
         }
        
          a 
         {
             padding-left: 15px;
             padding-right: 15px;
-            color: #E6EFE9;
+            color: #D8D8F6;
             font-size: large;
             font-family: Verdana, Helvetica, sans-serif;
         }
