@@ -11,10 +11,9 @@
         }             
         
         a 
-        {
-           
-            margin-top: 30px;
-            margin-top: 30px;
+        {           
+            margin-top: 10px;
+            margin-bottom: 10px;
             padding-left: 7px;
             padding-right: 7px;
             color: #D8D8F6;
@@ -29,8 +28,9 @@
         li, a
         {
              display:block;
-             text-decoration:none;
-             width: 80%;
+             text-decoration:none;         
+             margin-left:10%;
+             margin-right:10%;
         }
 
         ul
