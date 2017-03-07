@@ -40,11 +40,13 @@
         .backgroundColor1{background-color: #D8D8F6;}
         .backgroundColor2{background-color: #8DA1B9;}
 
-         .color1{color: #D8D8F6;}
-        .color2{color: #7AE7C7;}
+         .color1{color: #D8D8F6; font-size:x-large;}
+        .color2{color: #7AE7C7; font-size:x-large;}
         
         .textAlignCenter{text-align:center;}
         .fontSpaceman{font-family:spaceman}
+
+        
         
         .overlay{position:fixed; top: 0; left:0; width: 100%; height:100%; z-index: 1; overflow-x: hidden; padding-top: 60px; transition: 0.5s;}     
        
