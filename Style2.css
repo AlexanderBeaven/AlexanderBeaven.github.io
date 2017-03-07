@@ -25,6 +25,33 @@
            
         }
 
+        label, h3.first
+       {
+            color: #D8D8F6;
+       }
+
+       td, th, table
+       {
+           border-color: #7AE7C7;
+       }  
+       
+       img.picture
+       {
+            border-color: #8DA1B9;
+       }
+       h3.second 
+       {
+            color: #EF959D;
+       }
+
+       input, select, textarea
+       {
+           border-color: #7AE7C7;
+       }
+       form
+       {
+           border-color: #7AE7C7;
+       }
          hr
        {
            border: 1px solid #D8D8F6;
