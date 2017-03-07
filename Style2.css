@@ -1,7 +1,8 @@
-﻿        a:visited,  a:active
+﻿       a:active
         {           
-             background-color: #8DA1B9;
-              color: #D8D8F6;   
+              background-color: #7AE7C7;
+             color: #8DA1B9;
+             border-color: #EF959D;  
         }
         
          a:hover, a:link
@@ -10,7 +11,7 @@
              color: #8DA1B9;          
         }             
         
-        a 
+        a,  a:visited 
         {           
             margin-top: 10px;
             margin-bottom: 10px;          
