@@ -42,14 +42,16 @@
         nav
         {
             background-color: #D8D8F6;
-            height: auto;
+           margin-top: auto;
+            margin-bottom: auto;
             align-content:center;
         }
         div
         {
              align-content:center;
              background-color: #8DA1B9;
-             height: auto;
+            margin-top: auto;
+            margin-bottom: auto;
         }
        
         body.main 
