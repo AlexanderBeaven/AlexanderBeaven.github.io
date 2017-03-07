@@ -42,8 +42,14 @@
         nav
         {
             background-color: #D8D8F6;
-            height: 100%;
+            height: auto;
             align-content:center;
+        }
+        div
+        {
+             align-content:center;
+             background-color: #8DA1B9;
+             height: auto;
         }
        
         body.main 
