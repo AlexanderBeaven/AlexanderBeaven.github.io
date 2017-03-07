@@ -1,11 +1,11 @@
-﻿       a:active
+﻿       a.active
         {           
               background-color: #7AE7C7;
              color: #8DA1B9;
              border-color: #EF959D;  
         }
         
-         a:hover, a:link
+         a:hover:not(.active)
         {           
             background-color: #7AE7C7;
              color: #8DA1B9;          
