@@ -13,7 +13,7 @@
         
         a 
         {
-            margin-top: 2%;
+            margin-top: 5%;
             padding-left: 7px;
             padding-right: 7px;
             color: #D8D8F6;
@@ -42,6 +42,7 @@
         nav
         {
             background-color: #D8D8F6;
+            height: 100%;
         }
        
         body.main 
