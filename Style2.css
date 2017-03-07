@@ -12,6 +12,7 @@
         
         a 
         {
+           
             margin-top: 30px;
             margin-top: 30px;
             padding-left: 7px;
@@ -22,7 +23,21 @@
             border-radius: 1px;
             font-size: x-large;
             font-family: Verdana, Helvetica, sans-serif;
-            text-decoration:none;
+           
+        }
+
+        li, a
+        {
+             display:block;
+             text-decoration:none;
+        }
+
+        ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width:10%;
         }
 
          body
