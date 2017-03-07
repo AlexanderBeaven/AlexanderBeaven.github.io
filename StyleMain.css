@@ -38,6 +38,11 @@
             color: #D8D8F6;
             font-family: Verdana, Helvetica, sans-serif;
         }
+
+        nav
+        {
+            background-color: #D8D8F6;
+        }
        
         body.main 
         {
