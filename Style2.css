@@ -92,7 +92,7 @@
             border-radius: 12px;
             color: white;
             text-align: center;
-            font-family: Verdana, Helvetica, sans-serif;
+            font-family: audimat, Verdana, Helvetica, sans-serif;
         }
 
            form 
@@ -111,7 +111,7 @@
             border-radius: 12px;
             color: white;
             text-align: center;
-            font-family: Verdana, Helvetica, sans-serif;
+            font-family: audimat, Verdana, Helvetica, sans-serif;
             border-color: #7AE7C7;
         }      
          
@@ -145,7 +145,7 @@
         }
         label
         {
-            font-family: Verdana, Helvetica, sans-serif;
+            font-family: audimat, Verdana, Helvetica, sans-serif;
         }
         
         input.button1:hover
@@ -168,7 +168,7 @@
            margin-right: auto;
            border-bottom-style: solid;
            border-width: medium;
-           font-family: Verdana, Helvetica, sans-serif;       
+           font-family: audimat, Verdana, Helvetica, sans-serif;       
         }
         input.radial
         {
@@ -180,7 +180,7 @@
        {
            margin-left: 5px;
            margin-right: 5px;
-           font-family: Verdana, Helvetica, sans-serif;
+           font-family: audimat, Verdana, Helvetica, sans-serif;
            border-bottom-style: solid;
            border-width: medium;
        }
@@ -192,7 +192,7 @@
            width: 90%;
            border-bottom-style: solid;
            border-width: medium;
-           font-family: Verdana, Helvetica, sans-serif; 
+           font-family: audimat, Verdana, Helvetica, sans-serif; 
        }      
          html, body
          {
