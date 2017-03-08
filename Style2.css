@@ -62,6 +62,8 @@
 
         header{
             margin:auto;
+            margin-left: 20%;
+            margin-right: 20%;
         }
 
 
@@ -246,7 +248,7 @@
 
         .backgroundColor1{background-color: #D8D8F6;}
         .backgroundColor2{background-color: #8DA1B9;}
-        .backgroundTransparent{background-image: url(images/transparencyBar.png); background-repeat: no-repeat; background-size: 80% 100%;}
+        .backgroundTransparent{background-image: url(images/transparencyBar.png); background-repeat: no-repeat; background-size: 100% 100%;}
         .backgroundTransparentPlain{background-image: url(images/transparencyBarPlain.png); background-repeat: no-repeat; background-size: cover;}
 
          .color1{color: #D8D8F6;}
