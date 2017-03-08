@@ -236,7 +236,7 @@
         
         .textAlignCenter{text-align:center;}
         .fontSpaceman{font-family:spaceman;}
-         .fontMain{font-family:Verdana, Helvetica, sans-serif;}
+         .fontMain{font-family:audimat, Verdana, Helvetica, sans-serif;}
 
         
         
@@ -246,4 +246,10 @@
         {
             font-family: spaceman;
             src: url(fonts/SPACEMAN.ttf);
+        }
+
+          @font-face 
+        {
+            font-family: audimat;
+            src: url(fonts/AUdimat-Regular.otf);
         }
