@@ -38,10 +38,15 @@
         }
         p
         {    
-            margin-top: 10px;
-            margin-bottom: 10px;         
+            margin-top: 5px;
+            margin-bottom: 5px;         
             color: #D8D8F6;
             font-family: audimat, Verdana, Helvetica, sans-serif;
+        }
+        h3
+        {
+             margin-top: 5px;
+            margin-bottom: 5px;
         }
           img.picture
          {
