@@ -139,7 +139,7 @@
            text-align:center;
         }
 
-        a, input.button1, input.button2 
+        a
         {
         -webkit-transition-duration: 0.4s;       
         }
