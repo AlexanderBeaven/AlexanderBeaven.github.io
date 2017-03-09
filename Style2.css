@@ -159,11 +159,7 @@
            padding: 5px 15px;
            text-align:center;
         }
-
-        a
-        {
-        -webkit-transition-duration: 0.4s;       
-        }
+      
         label
         {
             font-family: audimat, Verdana, Helvetica, sans-serif;
