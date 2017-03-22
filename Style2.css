@@ -92,6 +92,7 @@
          body
         {
             position: relative;
+            background-color: black;
            background-image: url(images/indexbackground2b.jpg);
            background-repeat: no-repeat;
            background-size: cover;
