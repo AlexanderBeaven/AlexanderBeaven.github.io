@@ -100,10 +100,9 @@
         } 
 
          footer
-         {
-            
-            position: fixed;
+         {      
             float: right;
+              position: fixed;
          }
           table 
         {
