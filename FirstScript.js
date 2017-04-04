@@ -9,6 +9,7 @@ function checkForm() {
     if (fName != "")
     {
         fieldsCount++;
+        document.getElementById("fN").style.color = "#D8D8F6";
     }
     else {
         document.getElementById("fN").style.color = "#EF959D";
@@ -17,6 +18,7 @@ function checkForm() {
     if (lName != "")
     {
         fieldsCount++;
+        document.getElementById("fN").style.color = "#D8D8F6";
     }
     else {
         document.getElementById("lN").style.color = "#EF959D";
@@ -25,6 +27,7 @@ function checkForm() {
     if (eMail != "")
     {
         fieldsCount++;
+        document.getElementById("fN").style.color = "#D8D8F6";
     }
     else {
         document.getElementById("eM").style.color = "#EF959D";
@@ -32,7 +35,8 @@ function checkForm() {
 
     if (phone != "")
     {
-       fieldsCount++;
+        fieldsCount++;
+        document.getElementById("fN").style.color = "#D8D8F6";
     }
     else {
         document.getElementById("pN").style.color = "#EF959D";
@@ -41,6 +45,7 @@ function checkForm() {
     if (comment != "")
     {
         fieldsCount++;
+        document.getElementById("fN").style.color = "#D8D8F6";
     }
     else {
         document.getElementById("cM").style.color = "#EF959D";
