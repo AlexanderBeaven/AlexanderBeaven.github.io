@@ -18,7 +18,7 @@ function checkForm() {
     if (lName != "")
     {
         fieldsCount++;
-        document.getElementById("fN").style.backgroundColor = "#D8D8F6";
+        document.getElementById("lN").style.backgroundColor = "#D8D8F6";
     }
     else {
         document.getElementById("lN").style.backgroundColor = "#EF959D";
