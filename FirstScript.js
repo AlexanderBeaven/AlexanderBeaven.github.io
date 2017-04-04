@@ -56,6 +56,7 @@ function checkForm() {
         document.getElementById("sub").setAttribute('type', 'button');
     } else {
         document.getElementById("sub").setAttribute('type', 'submit');
+        alert("The form has been submitted. Thank you.");
     }
 
 
