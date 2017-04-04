@@ -12,7 +12,8 @@
         }             
         
         a 
-        {           
+        {     
+            transition-duration: 0.5s;      
             margin-top: 10px;
             margin-bottom: 10px;          
             color: #D8D8F6;
@@ -201,6 +202,7 @@
         }
        input
        {
+           transition-duration: 0.5s;
            margin-left: auto;
            margin-right: auto;
            border-bottom-style: solid;
