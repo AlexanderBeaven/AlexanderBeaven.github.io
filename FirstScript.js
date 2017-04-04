@@ -34,7 +34,7 @@ function checkForm() {
     }
 
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    if (phone.value.match(phoneo))
+    if (phone.value.match(phoneno))
     {
         fieldsCount++;
         document.getElementById("pN").style.backgroundColor = "#c2f5c2";
