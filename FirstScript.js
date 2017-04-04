@@ -33,8 +33,7 @@ function checkForm() {
         document.getElementById("eM").style.backgroundColor = "#ffd0d0";
     }
 
-    var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    if (phone.match(phoneno))
+    if (/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phone))   
     {
         fieldsCount++;
         document.getElementById("pN").style.backgroundColor = "#c2f5c2";
