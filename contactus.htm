@@ -86,8 +86,12 @@
         </form>
     </div>
     <footer>
-        <p id="date"></p>
-        <script>document.getElementById("date").innerHTML = Date()</script>
+        <p>Today is:</p>
+        <p id="date">Today is:</p>
+        <script>
+            var d = new Date(month, day, year);
+            document.getElementById("date").innerHTML = d;
+        </script>
     </footer>
 </body>
 </html>
