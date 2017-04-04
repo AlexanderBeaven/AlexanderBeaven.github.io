@@ -51,9 +51,10 @@ function checkForm() {
         document.getElementById("cM").style.backgroundColor = "#EF959D";
     }
 
-    if (fieldsCount < 5)
-    {
+    if (fieldsCount < 5) {
         alert("One or more fields are invalid.");
+    } else {
+        document.getElementById("cM"). = "#EF959D";
     }
 
 
