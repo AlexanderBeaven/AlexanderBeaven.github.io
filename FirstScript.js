@@ -53,8 +53,9 @@ function checkForm() {
 
     if (fieldsCount < 5) {
         alert("One or more fields are invalid.");
+        document.getElementById("cM").setAttribute('type', 'button');
     } else {
-        document.getElementById("cM"). = "#EF959D";
+        document.getElementById("cM").setAttribute('type', 'submit');
     }
 
 
