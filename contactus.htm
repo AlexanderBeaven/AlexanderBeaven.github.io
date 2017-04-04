@@ -33,25 +33,25 @@
         </h3>
        
 
-        <form action="" style="align-content:center">
+        <form name="contactForm" action="" style="align-content:center">        
             <h3 class="first" style="text-align:center">
                 <label>
                     First Name:
-                    <input type="text" name="firstName" size="20" />
+                    <input type="text" id="fN" name="firstName" size="20" />
                 </label>
                 <label>
                     Last Name:
-                    <input type="text" name="lastName" size="20" />
+                    <input type="text" id="lN" name="lastName" size="20" />
                 </label>
                 <br />
                 <br />
                 <label>
                     Email:
-                    <input type="email" name="email" size="30" />
+                    <input type="email" id="eM" name="email" size="30" />
                 </label>
                 <label>
                     Phone:
-                    <input type="text" name="lastName" size="10" max="10" />
+                    <input type="text" id="pN" name="phone" size="10" max="10" />
                 </label>
                 <br />
                 <br />
@@ -77,13 +77,14 @@
                 </label>
                 <br />
                 <br />
-                <textarea name="comments" rows="10"></textarea>
+                <textarea id="cM" name="comment" rows="10"></textarea>
                 <br />
                 <br />
-                <input type="submit" value="Submit" class="button1" />
+                <input type="submit" value="Submit" onSubmit="checkForm()"class="button1" />  
                 <input type="reset" value="Reset" class="button2" />
             </h3>
-        </form>
+            <script src="FirstScript.js"></script>
+         </form>
     </div>
     <div class="overlay"  style="font-size: 10px">
         <footer>
