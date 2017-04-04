@@ -24,7 +24,7 @@ function checkForm() {
         document.getElementById("lN").style.backgroundColor = "#ffd0d0";
     }
 
-    if (eMail != "")
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
     {
         fieldsCount++;
         document.getElementById("eM").style.backgroundColor = "#c2f5c2";
@@ -33,7 +33,8 @@ function checkForm() {
         document.getElementById("eM").style.backgroundColor = "#ffd0d0";
     }
 
-    if (phone != "")
+    var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    if (phone.value.match(phoneo))
     {
         fieldsCount++;
         document.getElementById("pN").style.backgroundColor = "#c2f5c2";
