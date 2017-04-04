@@ -24,7 +24,7 @@ function checkForm() {
         document.getElementById("lN").style.backgroundColor = "#ffd0d0";
     }
 
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(eMail))
     {
         fieldsCount++;
         document.getElementById("eM").style.backgroundColor = "#c2f5c2";
