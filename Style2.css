@@ -97,8 +97,14 @@
            background-repeat: no-repeat;
            background-size: cover;
            background-attachment: fixed;
-        } 
+        }
 
+        .pageFill 
+        {
+            width: auto;
+            height: auto;
+
+        }
          footer
          {      
             position:absolute;
