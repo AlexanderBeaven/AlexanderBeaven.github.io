@@ -9,7 +9,7 @@ function checkForm() {
     if (fName != "")
     {
         fieldsCount++;
-        document.getElementById("fN").style.backgroundColor = "#D8D8F6";
+        document.getElementById("fN").style.backgroundColor = "lightGreen";
     }
     else {
         document.getElementById("fN").style.backgroundColor = "#EF959D";
@@ -18,7 +18,7 @@ function checkForm() {
     if (lName != "")
     {
         fieldsCount++;
-        document.getElementById("lN").style.backgroundColor = "#D8D8F6";
+        document.getElementById("lN").style.backgroundColor = "lightGreen";
     }
     else {
         document.getElementById("lN").style.backgroundColor = "#EF959D";
@@ -27,7 +27,7 @@ function checkForm() {
     if (eMail != "")
     {
         fieldsCount++;
-        document.getElementById("fN").style.backgroundColor = "#D8D8F6";
+        document.getElementById("eM").style.backgroundColor = "lightGreen";
     }
     else {
         document.getElementById("eM").style.backgroundColor = "#EF959D";
@@ -36,7 +36,7 @@ function checkForm() {
     if (phone != "")
     {
         fieldsCount++;
-        document.getElementById("fN").style.backgroundColor = "#D8D8F6";
+        document.getElementById("pN").style.backgroundColor = "lightGreen";
     }
     else {
         document.getElementById("pN").style.backgroundColor = "#EF959D";
@@ -45,7 +45,7 @@ function checkForm() {
     if (comment != "")
     {
         fieldsCount++;
-        document.getElementById("fN").style.backgroundColor = "#D8D8F6";
+        document.getElementById("cM").style.backgroundColor = "lightGreen";
     }
     else {
         document.getElementById("cM").style.backgroundColor = "#EF959D";
