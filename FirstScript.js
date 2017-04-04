@@ -9,46 +9,46 @@ function checkForm() {
     if (fName != "")
     {
         fieldsCount++;
-        document.getElementById("fN").style.backgroundColor = "lightGreen";
+        document.getElementById("fN").style.backgroundColor = "#c2f5c2";
     }
     else {
-        document.getElementById("fN").style.backgroundColor = "#EF959D";
+        document.getElementById("fN").style.backgroundColor = "#ffd0d0";
     }
 
     if (lName != "")
     {
         fieldsCount++;
-        document.getElementById("lN").style.backgroundColor = "lightGreen";
+        document.getElementById("lN").style.backgroundColor = "#c2f5c2";
     }
     else {
-        document.getElementById("lN").style.backgroundColor = "#EF959D";
+        document.getElementById("lN").style.backgroundColor = "#ffd0d0";
     }
 
     if (eMail != "")
     {
         fieldsCount++;
-        document.getElementById("eM").style.backgroundColor = "lightGreen";
+        document.getElementById("eM").style.backgroundColor = "#c2f5c2";
     }
     else {
-        document.getElementById("eM").style.backgroundColor = "#EF959D";
+        document.getElementById("eM").style.backgroundColor = "#ffd0d0";
     }
 
     if (phone != "")
     {
         fieldsCount++;
-        document.getElementById("pN").style.backgroundColor = "lightGreen";
+        document.getElementById("pN").style.backgroundColor = "#c2f5c2";
     }
     else {
-        document.getElementById("pN").style.backgroundColor = "#EF959D";
+        document.getElementById("pN").style.backgroundColor = "#ffd0d0";
     }
 
     if (comment != "")
     {
         fieldsCount++;
-        document.getElementById("cM").style.backgroundColor = "lightGreen";
+        document.getElementById("cM").style.backgroundColor = "#c2f5c2";
     }
     else {
-        document.getElementById("cM").style.backgroundColor = "#EF959D";
+        document.getElementById("cM").style.backgroundColor = "#ffd0d0";
     }
 
     if (fieldsCount < 5) {
