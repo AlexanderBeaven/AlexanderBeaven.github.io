@@ -102,7 +102,8 @@
          footer
          {      
             float: right;
-              position: fixed;
+            bottom: 0;
+              position: absolute;
          }
           table 
         {
