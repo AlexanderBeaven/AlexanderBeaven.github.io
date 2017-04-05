@@ -13,8 +13,8 @@
         a
         {     
             transition-duration: 0.25s;      
-            margin-top: 10px;
-            margin-bottom: 10px;          
+            margin-top: 5px;
+            margin-bottom: 5px;          
             color: #D8D8F6;
             background-image: url(images/transparency.png);
              background-size: cover;
@@ -33,6 +33,7 @@
              transition-duration: 0.5s;          
             color: #D8D8F6;
             border: solid 1px #EF959D;
+            min-width: 150px;
             font-size: x-large;
             font-family: audimat, Verdana, Helvetica, sans-serif;
             cursor: pointer;
@@ -46,6 +47,7 @@
              transition-duration: 0.5s; 
             color: #D8D8F6;
             border: solid 1px #7AE7C7;
+            min-width: 150px;
             font-size: x-large;
             font-family: audimat, Verdana, Helvetica, sans-serif;
             cursor: pointer;
@@ -66,7 +68,7 @@
              display: none;
              position: absolute;
              right: 0;
-             min-width: 160px;
+             min-width: 150px;
              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
              z-index: 1;
         }
