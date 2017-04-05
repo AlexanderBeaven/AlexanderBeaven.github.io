@@ -67,7 +67,8 @@
              padding-top: 1%;
              position: absolute;
              display: inline-block;
-             height:50%;
+             height:100%;
+             width: 20%;
         }
 
         .dropdown-content 
