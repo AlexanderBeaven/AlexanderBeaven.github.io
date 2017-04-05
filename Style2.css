@@ -68,7 +68,7 @@
              position: fixed;
              display: inline-block;
              height: 100%;
-             width: auto;
+             width: 25%;
         }
 
         .dropdown-content 
