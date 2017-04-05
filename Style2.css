@@ -33,7 +33,9 @@
              transition-duration: 0.5s;          
             color: #D8D8F6;
             border: solid 1px #EF959D;
-            min-width: 150px;
+            min-width: 100px;
+            padding: 5px;
+            text-align:center;
             font-size: x-large;
             font-family: audimat, Verdana, Helvetica, sans-serif;
             cursor: pointer;
