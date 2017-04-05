@@ -105,6 +105,7 @@
         .dropdown:hover .dropbtn1 
         {
               background-color: #EF959D;
+              border-width: 2px;
         }
         
         td
