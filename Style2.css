@@ -13,7 +13,7 @@
         
         a 
         {     
-            transition-duration: 0.5s;      
+            transition-duration: 0.25s;      
             margin-top: 10px;
             margin-bottom: 10px;          
             color: #D8D8F6;
@@ -27,6 +27,7 @@
        
          .dropbtn 
         {
+             transition-duration: 0.5s; 
             background-color: #8DA1B9;
             color: #D8D8F6;
             border-color: #EF959D;  
@@ -39,12 +40,14 @@
 
         .dropdown 
         {
+            transition-duration: 0.25s; 
              position: relative;
              display: inline-block;
         }
 
         .dropdown-content 
         {
+            transition-duration: 0.5s; 
              background-image: url(images/transparency.png);
              background-size: cover;
              display: none;
