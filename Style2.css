@@ -1,13 +1,12 @@
 ﻿       a.active
         {           
-              background-color: #8DA1B9;
+             
              color: #D8D8F6;
              border-color: #EF959D;  
         }
         
          a:hover:not(.active)
-        {           
-            background-color: #7AE7C7;
+        {                       
              color: #D8D8F6;         
         }             
         
@@ -28,8 +27,7 @@
        
          .dropbtn1 
         {
-             margin-top: 10px;
-            margin-bottom: 10px;  
+              
               background-image: url(images/transparency.png);
              background-size: cover;
              transition-duration: 0.5s;          
@@ -42,8 +40,7 @@
 
          .dropbtn2 
         {
-             margin-top: 10px;
-            margin-bottom: 10px;  
+             
               background-image: url(images/transparency.png);
              background-size: cover;
              transition-duration: 0.5s; 
