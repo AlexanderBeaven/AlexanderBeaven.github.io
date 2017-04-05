@@ -34,7 +34,7 @@
              background-size: cover;
              transition-duration: 0.5s;          
             color: #D8D8F6;
-            border: solid 1px #EF959D;
+            border: solid 2px #EF959D;
             min-width: 70px;
             padding: 5px;
             text-align:left;
@@ -105,7 +105,6 @@
         .dropdown:hover .dropbtn1 
         {
               background-color: #EF959D;
-              border-width: 2px;
         }
         
         td
