@@ -35,7 +35,7 @@
              transition-duration: 0.5s;          
             color: #D8D8F6;
             border: solid 2px #EF959D;
-            min-width: 70px;
+            min-width: 8%;
             padding: 5px;
             text-align:left;
             font-size: x-large;
@@ -79,7 +79,7 @@
              display: none;
              position: absolute;
              right: 0;
-             min-width: 150px;
+             min-width: 8%;
              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
              z-index: 1;
         }
