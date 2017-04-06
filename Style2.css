@@ -60,8 +60,8 @@
 
         .dropdown 
         {
-             top: 0; 
-             left: 0;                        
+             top: 10px; 
+             left: 10px;                        
              position: fixed;
              display: inline-block;           
         }
@@ -76,7 +76,7 @@
              right: 0;            
              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
              z-index: 1;
-             min-width:9%;
+             min-width:150px;
         }
 
         .dropdown-content a 
