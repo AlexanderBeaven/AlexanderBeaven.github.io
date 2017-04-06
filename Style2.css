@@ -36,7 +36,7 @@
              transition-duration: 0.5s;          
             color: #D8D8F6;
             border: solid 2px #EF959D;
-            min-width: 5%;
+             min-width: 120px;
             padding: 5px;
             text-align:left;
             font-size: x-large;
@@ -53,6 +53,7 @@
             color: #D8D8F6;
             border: solid 1px #7AE7C7;
             min-width: 150px;
+             padding: 5px;
             font-size: x-large;
             font-family: audimat, Verdana, Helvetica, sans-serif;
             cursor: pointer;
@@ -60,8 +61,8 @@
 
         .dropdown 
         {
-             top: 10px; 
-             left: 10px;                        
+             top: 15px; 
+             left: 15px;                        
              position: fixed;
              display: inline-block;           
         }
