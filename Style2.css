@@ -62,7 +62,7 @@
         {
              top: 0; 
              left: 0;                        
-             position: relative;
+             position: fixed;
              display: inline-block;           
         }
 
