@@ -60,10 +60,8 @@
 
         .dropdown 
         {
-            transition-duration: 0.25s; 
              top: 0; 
-             left:0; 
-             z-index: 1;                       
+             left: 0;                        
              position: relative;
              display: inline-block;           
         }
