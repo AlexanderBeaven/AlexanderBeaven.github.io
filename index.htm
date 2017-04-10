@@ -11,11 +11,15 @@
         toggle between hiding and showing the dropdown content */
         function productMenu() {
             document.getElementById("myDropdown").classList.toggle("show");
-            if (document.getElementById("productsLink").innerHTML != "Products &#8628;"){
+            if (document.getElementById("myDropdown").classList.toggle("show")) {
                 document.getElementById("productsLink").innerHTML = "Products &#8628;";
             }else{
                 document.getElementById("productsLink").innerHTML = "Products &#8594;";
             }
+        }
+
+        function productMenuToggle() {
+            document.getElementById("myDropdown").classList.toggle("show");
         }
 
         function mouseOverMenu()
@@ -28,7 +32,7 @@
             document.getElementById("mainMenu").innerHTML = "Menu &#8594;";
             if (document.getElementById("myDropdown").classList.toggle("show"))
             {
-                productMenu();
+                productMenuToggle();
             }
         }
 
