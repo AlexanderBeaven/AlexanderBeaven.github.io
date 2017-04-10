@@ -9,7 +9,7 @@
              background-size: cover;
              transition-duration: 0.5s;          
             color: #D8D8F6;
-            border: solid 2px #7AE7C7;
+            border: solid 2px #EF959D;
              min-width: 80px;
             padding: 5px;
             text-align:left;
@@ -63,8 +63,8 @@
              background-size: cover;
              transition-duration: 0.5s;          
             color: #D8D8F6;
-            border: solid 2px #EF959D;
-             min-width: 120px;
+            border: solid 2px #7AE7C7;
+             min-width: 122px;
             padding: 5px;
             text-align:left;
             font-size: x-large;
