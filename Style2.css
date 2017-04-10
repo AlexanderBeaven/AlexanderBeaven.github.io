@@ -9,7 +9,7 @@
              background-size: cover;
              transition-duration: 0.5s;          
             color: #D8D8F6;
-            border: solid 2px #EF959D;
+            border: solid 2px #7AE7C7;
              min-width: 80px;
             padding: 5px;
             text-align:left;
@@ -109,7 +109,7 @@
 .show {display:block;}
 
 
-a.active
+        a.active
         {           
              
              color: #D8D8F6;
