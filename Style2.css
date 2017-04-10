@@ -10,7 +10,7 @@
              transition-duration: 0.5s;          
             color: #D8D8F6;
             border: solid 2px #EF959D;
-             min-width: 80px;
+             min-width: 90px;
             padding: 5px;
             text-align:left;
             font-size: x-large;
@@ -64,7 +64,8 @@
              transition-duration: 0.5s;          
             color: #D8D8F6;
             border: solid 2px #7AE7C7;
-             min-width: 122px;          
+             min-width: 122px;
+          
             text-align:left;
             font-size: x-large;
             font-family: audimat, Verdana, Helvetica, sans-serif;
