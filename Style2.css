@@ -82,13 +82,32 @@
              min-width: 150px;
         }
 
+        .dropdown-content2 
+        {
+            transition-duration: 0.5s; 
+             background-image: url(images/transparency.png);
+             background-size: cover;
+             display: none;
+             position: absolute;
+             right: 0;            
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+             min-width: 150px;
+        }
+
         .dropdown-content a 
         {             
              text-decoration: none;
              display: block;
         }
 
-        .dropdown-content a:hover 
+        .dropdown-content2 a 
+        {             
+             text-decoration: none;
+             display: block;
+        }
+
+        .dropdown-content  .dropdown-content2 a:hover 
         {
            background-color: #7AE7C7;
              color: #D8D8F6;     
@@ -99,8 +118,19 @@
              transition-duration: 0.5s; 
              display: block;
         }
+
+        .dropdown:hover .dropdown-content2 
+        {
+             transition-duration: 0.5s; 
+             display: block;
+        }
         
         .dropdown:hover .dropbtn1 
+        {
+              background-color: #EF959D;
+        }
+
+         .dropdown:hover .dropbtn2 
         {
               background-color: #EF959D;
         }
