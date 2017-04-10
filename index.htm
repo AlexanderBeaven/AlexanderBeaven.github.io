@@ -6,7 +6,28 @@
   <link rel="stylesheet" type="text/css" href="Style2.css">
   <title>Dimension Assets</title>
   <meta name="description" content="HTML5 Template">
- 
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -16,10 +37,10 @@
         <div class="dropdown-content" style="text-align:center; left:0;">
             <a href="index.htm">Home</a>
             <div class="dropdown2">
-                <a class="dropbtn2">Products</a>
-                <div style="display:none; text-align:center; left:0;" class="dropdown-content2">
+                <button onclick="myFunction()" class="dropbtn2">Products</button>
+                <div id="myDropdown2" class="dropdown-content2">
                     <a href="assets.htm">Assets</a>
-                    <a href="packages.htm">Packages</a>
+                    <a href="packages.htm">Packages</a>                    
                 </div>
             </div>
                 <a href="contactus.htm">Contact Us</a>
