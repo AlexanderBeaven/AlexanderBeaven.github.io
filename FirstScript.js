@@ -74,12 +74,13 @@ function checkForm() {
         toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").innerHTML = "Products &#8628;";
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn2')) {
-
+        document.getElementById("myDropdown").innerHTML = "Products &#8594;";
         var dropdowns = document.getElementsByClassName("dropdown-content2");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
