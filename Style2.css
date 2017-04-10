@@ -132,7 +132,9 @@ a.active
         {             
              text-decoration: none;
              display: block;
-        } 
+        }
+        
+        .dropdown-content a:hover {background-color: #7AE7C7} 
 
         .dropdown:hover .dropdown-content 
         {
