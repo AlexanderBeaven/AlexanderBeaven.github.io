@@ -2,15 +2,16 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="Style2.css">
-  <title>Dimension Assets</title>
-  <meta name="description" content="HTML5 Template">
-   <script>/* When the user clicks on the button,
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Style2.css">
+    <title>Dimension Assets</title>
+    <meta name="description" content="HTML5 Template">
+    <script>
+/* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
        function myFunction() {
            document.getElementById("myDropdown").classList.toggle("show");
-           document.getElementById("myDropdown").innerHTML = "Products &#8628;";
+           document.getElementById("productsLink").innerHTML = "Products &#8628;";
        }
 
        // Close the dropdown menu if the user clicks outside of it
@@ -31,31 +32,31 @@
 </head>
 
 <body>
-   
+
     <div class="dropdown" style="float:left;">
         <a class="dropbtn1">Menu &#8594;</a>
         <div class="dropdown-content" style="text-align:center; left:10px;">
             <a href="index.htm">Home</a>
             <a href="contactus.htm">Contact Us</a>
             <div class="dropdown2">
-                <a onclick="myFunction()" class="dropbtn2">Products &#8594;</a>
+                <a onclick="myFunction()" id="productsLink" class="dropbtn2">Products &#8594;</a>
                 <div id="myDropdown" class="dropdown-content2">
                     <a href="assets.htm">Assets</a>
-                    <a href="packages.htm">Packages</a>                    
+                    <a href="packages.htm">Packages</a>
                 </div>
-            </div>   
             </div>
+        </div>
     </div>
 
-   <!--
-    <ul style="width:9%" class="overlay textAlignCenter fontMain">
-        <li><a class="active" href="index.htm">Home</a></li>
-        <li> <a href="assets.htm">Assets</a></li>
-        <li> <a href="packages.htm">Packages</a></li>
-        <li> <a href="contactus.htm">Contact</a></li>
-    </ul>
-    --> 
-    
+    <!--
+     <ul style="width:9%" class="overlay textAlignCenter fontMain">
+         <li><a class="active" href="index.htm">Home</a></li>
+         <li> <a href="assets.htm">Assets</a></li>
+         <li> <a href="packages.htm">Packages</a></li>
+         <li> <a href="contactus.htm">Contact</a></li>
+     </ul>
+     -->
+
     <div class="textAlignCenter" style="align-content:center;">
         <header class="backgroundTransparent">
             <h1 class="color1 fontSpaceman" style="font-size:55px">Dimension<br />Assets<br /></h1>
@@ -69,9 +70,9 @@
             Are you an independent game developer looking to take your graphics to the next level? <br />
             Dimension Assets can provide your game with the original assets it needs, at an affordable price. <br />
             Cel-shaded? Retro? Stylized? Realistic? Whichever style you're looking for, Dimension Assets can handle it. <br />
-        </h3>      
+        </h3>
     </div>
-    <div class="overlay"  style="font-size: 10px">
+    <div class="overlay" style="font-size: 10px">
         <footer>
             <p id="date"></p>
             <script>

@@ -11,7 +11,7 @@
         toggle between hiding and showing the dropdown content */
        function myFunction() {
            document.getElementById("myDropdown").classList.toggle("show");
-           document.getElementById("myDropdown").innerHTML = "Products &#8628;";
+           document.getElementById("productsLink").innerHTML = "Products &#8628;";
        }
 
        // Close the dropdown menu if the user clicks outside of it
@@ -29,7 +29,6 @@
            }
        }
     </script>
-   
 </head>
 
 <body>
@@ -40,7 +39,7 @@
             <a href="index.htm">Home</a>
             <a href="contactus.htm">Contact Us</a>
             <div class="dropdown2">
-                <a onclick="myFunction()" class="dropbtn2">Products &#8594;</a>
+                <a onclick="myFunction()" id="productsLink" class="dropbtn2">Products &#8594;</a>
                 <div id="myDropdown" class="dropdown-content2">
                     <a href="assets.htm">Assets</a>
                     <a href="packages.htm">Packages</a>
