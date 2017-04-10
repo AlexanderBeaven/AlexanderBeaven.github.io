@@ -1,4 +1,63 @@
-﻿       
+﻿        .overlay{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
+
+        .overlayRight{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
+         
+        .dropbtn1 
+        {
+              
+              background-image: url(images/transparency.png);
+             background-size: cover;
+             transition-duration: 0.5s;          
+            color: #D8D8F6;
+            border: solid 2px #EF959D;
+             min-width: 80px;
+            padding: 5px;
+            text-align:left;
+            font-size: x-large;
+            font-family: audimat, Verdana, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .dropdown 
+        {
+             top: 20px; 
+             left: 20px;                        
+             position: fixed;
+             display: inline-block;           
+        }
+
+        .dropdown-content 
+        {
+            transition-duration: 0.5s; 
+             background-image: url(images/transparency.png);
+             background-size: cover;
+             display: none;
+             position: absolute;
+             right: 0;            
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+             min-width: 150px;
+        }      
+
+        .dropdown-content a 
+        {             
+             text-decoration: none;
+             display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #7AE7C7} 
+
+        .dropdown:hover .dropdown-content 
+        {
+             transition-duration: 0.5s; 
+             display: block;
+        }
+        
+        .dropdown:hover .dropbtn1 
+        {
+              background-color: #EF959D;
+        }  
+
 .dropbtn2 {
             background-image: url(images/transparency.png);
              background-size: cover;
@@ -78,65 +137,7 @@ a.active
            
         }
        
-        .overlay{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
-
-        .overlayRight{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
-         
-        .dropbtn1 
-        {
-              
-              background-image: url(images/transparency.png);
-             background-size: cover;
-             transition-duration: 0.5s;          
-            color: #D8D8F6;
-            border: solid 2px #EF959D;
-             min-width: 80px;
-            padding: 5px;
-            text-align:left;
-            font-size: x-large;
-            font-family: audimat, Verdana, Helvetica, sans-serif;
-            cursor: pointer;
-        }
-
-        .dropdown 
-        {
-             top: 20px; 
-             left: 20px;                        
-             position: fixed;
-             display: inline-block;           
-        }
-
-        .dropdown-content 
-        {
-            transition-duration: 0.5s; 
-             background-image: url(images/transparency.png);
-             background-size: cover;
-             display: none;
-             position: absolute;
-             right: 0;            
-             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-             z-index: 1;
-             min-width: 150px;
-        }      
-
-        .dropdown-content a 
-        {             
-             text-decoration: none;
-             display: block;
-        }
-        
-        .dropdown-content a:hover {background-color: #7AE7C7} 
-
-        .dropdown:hover .dropdown-content 
-        {
-             transition-duration: 0.5s; 
-             display: block;
-        }
-        
-        .dropdown:hover .dropbtn1 
-        {
-              background-color: #EF959D;
-        }  
+       
         
         td
         {
