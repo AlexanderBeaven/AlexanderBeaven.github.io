@@ -5,7 +5,7 @@
              transition-duration: 0.5s;          
             color: #D8D8F6;
             border: solid 2px #EF959D;
-             min-width: 80px;
+             min-width: 150px;
             padding: 5px;
             text-align:left;
             font-size: x-large;
@@ -26,7 +26,6 @@
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content2 {
-    left: 10px;
     transition-duration: 0.5s; 
              background-image: url(images/transparency.png);
              background-size: cover;
