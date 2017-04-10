@@ -6,16 +6,43 @@
     <link rel="stylesheet" type="text/css" href="Style2.css">
     <title>Dimension Assets</title>
     <meta name="description" content="HTML5 Template">
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn2')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content2");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-   
+
     <div class="dropdown" style="float:left;">
         <a class="dropbtn1">Menu</a>
         <div class="dropdown-content" style="text-align:center; left:0;">
             <a href="index.htm">Home</a>
-            <a href="assets.htm">Assets</a>
-            <a href="packages.htm">Packages</a>
+            <div class="dropdown2">
+                <button onclick="myFunction()" class="dropbtn2">Products ></button>
+                <div id="myDropdown" class="dropdown-content2" style="left:auto;">
+                    <a href="assets.htm">Assets</a>
+                    <a href="packages.htm">Packages</a>
+                </div>
+            </div>
             <a href="contactus.htm">Contact Us</a>
         </div>
     </div>
@@ -28,40 +55,40 @@
         <h2 class="color2 fontSpaceman" style="font-size:45px">Contact Us<br /></h2>
 
         <hr />
-        <br/>
+        <br />
         <h3 class="first fontMain color1" style="text-align:center; font-size:30px;">
             If you have any questions regarding your order, assets, asset packages, <br />
             or you would like a price qoute for your project, please submit the form below.<br />
             We will contact you as soon as possible.
         </h3>
-       
 
-        <form name="contactForm" action="" style="align-content:center">        
+
+        <form name="contactForm" action="" style="align-content:center">
             <h3 class="first" style="text-align:center">
                 <label>
                     First Name:
-                    <input type="text" id="fN" name="firstName" size="20" required/>
+                    <input type="text" id="fN" name="firstName" size="20" required />
                 </label>
                 <label>
                     Last Name:
-                    <input type="text" id="lN" name="lastName" size="20" required/>
+                    <input type="text" id="lN" name="lastName" size="20" required />
                 </label>
                 <br />
                 <br />
                 <label>
                     Email:
-                    <input type="email" id="eM" name="email" size="30" required/>
+                    <input type="email" id="eM" name="email" size="30" required />
                 </label>
                 <label>
                     Phone:
-                    <input type="tel" id="pN" name="phone" size="10" max="10" required/>
+                    <input type="tel" id="pN" name="phone" size="10" max="10" required />
                 </label>
                 <br />
                 <br />
                 <em> Preferred Contact Method: </em><br />
                 <label>
                     Email:
-                    <input class="radial" type="radio" name="method" checked/>
+                    <input class="radial" type="radio" name="method" checked />
                 </label>
                 <label>
                     Phone:
@@ -83,14 +110,14 @@
                 <textarea id="cM" name="comment" rows="10" required></textarea>
                 <br />
                 <br />
-                <input type="button" id="sub" value="Submit" onclick="checkForm()"class="button1" />  
+                <input type="button" id="sub" value="Submit" onclick="checkForm()" class="button1" />
                 <input type="reset" value="Reset" class="button2" />
             </h3>
-           
-         </form>
+
+        </form>
     </div>
     <script src="FirstScript.js"></script>
-    <div class="overlay"  style="font-size: 10px">
+    <div class="overlay" style="font-size: 10px">
         <footer>
             <p id="date"></p>
             <script>
