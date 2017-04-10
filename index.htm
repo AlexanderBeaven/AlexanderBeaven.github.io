@@ -15,9 +15,9 @@
 
         // Close the dropdown menu if the user clicks outside of it
         window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
+            if (!event.target.matches('.dropbtn2')) {
 
-                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var dropdowns = document.getElementsByClassName("dropdown-content2");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
@@ -38,7 +38,7 @@
             <a href="index.htm">Home</a>
             <div class="dropdown2">
                 <button onclick="myFunction()" class="dropbtn2">Products</button>
-                <div id="myDropdown2" class="dropdown-content2" style="left:auto;">
+                <div id="myDropdown" class="dropdown-content2" style="left:auto;">
                     <a href="assets.htm">Assets</a>
                     <a href="packages.htm">Packages</a>                    
                 </div>
