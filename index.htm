@@ -34,6 +34,10 @@
         function mouseLeaveMenu()
         {
             document.getElementById("mainMenu").innerHTML = "Menu &#8594;";
+            if (showing) {
+                document.getElementById("productsLink").innerHTML = "Products &#8594;";
+                showing = false;
+            }
            
         }
 
