@@ -105,6 +105,12 @@
 /* Change color of dropdown links on hover */
 .dropdown-content2 a:hover {background-color: #7AE7C7;}
 
+.dropdown2:hover .dropbtn2 
+        {
+              background-color: #EF959D;
+              border-color: #EF959D;
+        }  
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
