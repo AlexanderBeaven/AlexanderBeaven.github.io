@@ -22,8 +22,11 @@
             }
         }
 
-        function productMenuToggle() {
-            document.getElementById("myDropdown").classList.toggle("show");
+        function mouseLeaveProducts() {
+            if (showing)
+            {
+                productMenu();
+            }
         }
 
         function mouseOverMenu()
