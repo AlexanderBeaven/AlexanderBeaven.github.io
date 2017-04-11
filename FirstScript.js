@@ -9,7 +9,7 @@ function checkForm() {
     if (fName != "")
     {
         fieldsCount++;
-        document.getElementById("fN").style.backgroundColor = "#c2f5c2";
+        document.getElementById("fN").style.backgroundColor = white;
         document.getElementById("fN").style.borderColor = "#7AE7C7";
     }
     else {
@@ -20,7 +20,7 @@ function checkForm() {
     if (lName != "")
     {
         fieldsCount++;
-        document.getElementById("lN").style.backgroundColor = "#c2f5c2";
+        document.getElementById("lN").style.backgroundColor = white;
         document.getElementById("lN").style.borderColor = "#7AE7C7";
     }
     else {
@@ -31,7 +31,7 @@ function checkForm() {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(eMail))
     {
         fieldsCount++;
-        document.getElementById("eM").style.backgroundColor = "#c2f5c2";
+        document.getElementById("eM").style.backgroundColor = white;
         document.getElementById("eM").style.borderColor = "#7AE7C7";
     }
     else {
@@ -42,7 +42,7 @@ function checkForm() {
     if (/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phone))   
     {
         fieldsCount++;
-        document.getElementById("pN").style.backgroundColor = "#c2f5c2";
+        document.getElementById("pN").style.backgroundColor = white;
         document.getElementById("pN").style.borderColor = "#7AE7C7";
     }
     else {
@@ -53,7 +53,7 @@ function checkForm() {
     if (comment != "")
     {
         fieldsCount++;
-        document.getElementById("cM").style.backgroundColor = "#c2f5c2";
+        document.getElementById("cM").style.backgroundColor = white;
         document.getElementById("cM").style.borderColor = "#7AE7C7";
     }
     else {
