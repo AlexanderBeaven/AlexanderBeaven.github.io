@@ -166,8 +166,14 @@
         }
         h3
         {
+            
              margin-top: 5px;
             margin-bottom: 5px;
+        }
+        
+        h1, h2, h3{
+
+            text-shadow: 2px 2px #ff0000;
         }
           img.picture
          {
@@ -268,7 +274,7 @@
             padding-right: 5px;
             border: 2px solid;
             border-width:medium;
-            border-radius: 12px;
+            border-radius: 12px;            
             color: white;
             text-align: center;
             font-family: audimat, Verdana, Helvetica, sans-serif;
