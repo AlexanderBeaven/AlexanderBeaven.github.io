@@ -49,8 +49,7 @@
         .dropdown-content a:hover {background-color: #7AE7C7} 
 
         .dropdown:hover .dropdown-content 
-        {
-             transition-duration: 0.5s; 
+        { 
              display: block;
         }
         
