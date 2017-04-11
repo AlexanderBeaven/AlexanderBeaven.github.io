@@ -9,12 +9,16 @@
     <script>
 /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
+        var showing = false;
+
         function productMenu() {
             document.getElementById("myDropdown").classList.toggle("show");
-            if (document.getElementById("productsLink").innerHTML == "Products &#x2192;") {
-                document.getElementById("productsLink").innerHTML = "Products &#x21B4;";
-            }else{
-                document.getElementById("productsLink").innerHTML = "Products &#x2192;";
+            if (!showing) {
+                document.getElementById("productsLink").innerHTML = "Products &#8628;";
+                showing = true;
+            } else {
+                document.getElementById("productsLink").innerHTML = "Products &#8594;";
+                showing = false;
             }
         }
 

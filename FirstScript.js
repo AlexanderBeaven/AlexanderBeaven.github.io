@@ -72,12 +72,16 @@ function checkForm() {
 
 /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
+var showing = false;
+
 function productMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
-    if (document.getElementById("productsLink").innerHTML != "Products &#8628;") {
+    if (!showing) {
         document.getElementById("productsLink").innerHTML = "Products &#8628;";
+        showing = true;
     } else {
         document.getElementById("productsLink").innerHTML = "Products &#8594;";
+        showing = false;
     }
 }
 
