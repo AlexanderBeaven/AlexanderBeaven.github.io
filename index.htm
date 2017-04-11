@@ -37,7 +37,7 @@
         function mouseLeaveMenu()
         {
             document.getElementById("mainMenu").innerHTML = "Menu &#8594;"; 
-            if (document.getElementById("content").style.display == "block") {
+            if (document.getElementById("content").style.display === 'none') {
                 if (showing) {
                     productMenu();
                 }
