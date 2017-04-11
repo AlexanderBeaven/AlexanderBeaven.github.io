@@ -85,10 +85,30 @@ function productMenu() {
     }
 }
 
+function mouseLeaveProducts() {
+    if (showing) {
+        productMenu();
+    }
+}
+
+function mouseOverMenu() {
+    document.getElementById("mainMenu").innerHTML = "Menu &#8628;";
+}
+
+function mouseLeaveMenu() {
+    document.getElementById("mainMenu").innerHTML = "Menu &#8594;";
+
+    if (showing) {
+        productMenu();
+    }
+
+}
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn2')) {
-        document.getElementById("productsLink").innerHTML = "Products &#8594;";
+        document.getElementById("productsLink").innerHTML = "Products &#x2192;";
+        showing = false;
         var dropdowns = document.getElementsByClassName("dropdown-content2");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
