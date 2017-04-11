@@ -37,7 +37,7 @@
         function mouseLeaveMenu()
         {
             document.getElementById("mainMenu").innerHTML = "Menu &#8594;"; 
-            if (document.getElementById("content").style.display = "block") {
+            if (document.getElementById("content").style.display = "none") {
                 if (showing) {
                     productMenu();
                 }
@@ -64,7 +64,7 @@
 
 <body>
 
-    <div onmouseover="mouseOverMenu()" onmouseout="mouseLeaveMenu()" class="dropdown" style="float:left;">
+    <div onmouseover="mouseOverMenu()" onmouseleave="mouseLeaveMenu()" class="dropdown" style="float:left;">
         <a class="dropbtn1" id="mainMenu">Menu &#8594;</a>
         <div class="dropdown-content" id="content" style="text-align:center; left:15px;">
             <a href="index.htm">Home</a>
