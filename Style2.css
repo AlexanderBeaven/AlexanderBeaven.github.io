@@ -5,13 +5,13 @@
          @font-face 
         {
             font-family: spaceman;
-            src: url(spaceman.ttf) format('truetype');
+            src: url('spaceman.ttf') format('truetype');
         }
 
           @font-face 
         {
             font-family: audimat;
-            src: url(AUdimat-Regular.otf);
+            src: url('AUdimat-Regular.otf');
         }
 
         .dropbtn1 
