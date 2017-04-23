@@ -2,6 +2,18 @@
 
         .overlayRight{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
          
+         @font-face 
+        {
+            font-family: spaceman;
+            src: url(fonts/spaceman.otf);
+        }
+
+          @font-face 
+        {
+            font-family: audimat;
+            src: url(fonts/AUdimat-Regular.otf);
+        }
+
         .dropbtn1 
         {
               
@@ -412,14 +424,4 @@
         
              
        
-         @font-face 
-        {
-            font-family: spaceman;
-            src: url(fonts/spaceman.otf);
-        }
-
-          @font-face 
-        {
-            font-family: audimat;
-            src: url(fonts/AUdimat-Regular.otf);
-        }
+        
