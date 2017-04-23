@@ -415,7 +415,7 @@
          @font-face 
         {
             font-family: spaceman;
-            src: url(fonts/conthrax-sb.ttf) format('truetype');
+            src: url(fonts/spaceman.ttf) format('truetype');
         }
 
           @font-face 
