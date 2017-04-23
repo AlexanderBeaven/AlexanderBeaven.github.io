@@ -5,7 +5,7 @@
          @font-face 
         {
             font-family: spaceman;
-            src: url('spaceman.ttf') format('truetype');
+            src: url('spaceman.otf');
         }
 
           @font-face 
