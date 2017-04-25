@@ -116,7 +116,7 @@
              transition-duration: 0.25s;          
             color: #D8D8F6;
             border: solid 2px #EF959D;
-             min-width: 120px;
+             min-width: 105px;
             padding: 5px;
             margin-bottom:0;
             text-align:left;
@@ -143,7 +143,7 @@
              right: 0;            
              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
              z-index: 1;
-             min-width: 150px;
+             min-width: 140px;
         }      
 
         .dropdown-content a 
