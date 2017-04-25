@@ -21,6 +21,8 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-bottom:20px;
+   margin-top:20px;
   background-color:black;
   border:solid 2px #7AE7C7;
 }
