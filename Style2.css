@@ -1,21 +1,20 @@
-﻿        .overlay{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
+﻿.overlay{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
 
-        .overlayRight{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
+.overlayRight{position:fixed; top: 0; left:0; height:10%; z-index: 1; overflow: auto; padding-top: 2%; transition: 0.5s;}
          
-         @font-face 
+@font-face 
         {
             font-family: spaceman;
             src: url('fonts/SPACEMAN.otf');
         }
 
-          @font-face 
+@font-face 
         {
             font-family: audimat;
             src: url('fonts/AUdimat-Regular.otf');
         }
 
-          * {box-sizing:border-box}
-
+* {box-sizing:border-box}
 
 .slideshow-container {
   max-width: 1000px;
@@ -31,7 +30,6 @@
 .mySlides {
     display: none;
 }
-
 
 .prev, .next {
   cursor: pointer;
@@ -108,7 +106,7 @@
   to {opacity: 1}
 }
 
-        .dropbtn1 
+.dropbtn1 
         {
               
               background-image: url(images/transparency.png);
@@ -125,7 +123,7 @@
             cursor: pointer;
         }
 
-        .dropdown 
+.dropdown 
         {
              top: 20px; 
              left: 20px;                        
@@ -133,7 +131,7 @@
              display: inline-block;           
         }
 
-        .dropdown-content 
+.dropdown-content 
         {
             transition-duration: 0.5s; 
              background-image: url(images/transparency.png);
@@ -146,20 +144,20 @@
              min-width: 150px;
         }      
 
-        .dropdown-content a 
+.dropdown-content a 
         {             
              text-decoration: none;
              display: block;
         }
         
-        .dropdown-content a:hover {background-color: #7AE7C7} 
+.dropdown-content a:hover {background-color: #7AE7C7} 
 
-        .dropdown:hover .dropdown-content 
+.dropdown:hover .dropdown-content 
         { 
              display: block;
         }
         
-        .dropdown:hover .dropbtn1 
+.dropdown:hover .dropbtn1 
         {
               background-color: #EF959D;
         }  
@@ -178,18 +176,15 @@
             cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
 .dropbtn2:hover, .dropbtn2:focus {
     background-color: #EF959D;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown2 {                            
              position: relative;
              display: inline-block;   
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content2 {
     transition-duration: 0.5s; 
              background-image: url(images/transparency.png);
@@ -202,13 +197,11 @@
              min-width: 150px;
 }
 
-/* Links inside the dropdown */
 .dropdown-content2 a {  
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content2 a:hover {background-color: #7AE7C7;}
 
 .dropdown2:hover .dropbtn2 
@@ -216,23 +209,21 @@
               background-color: #7AE7C7;             
         }  
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-
-        a.active
+a.active
         {           
              
              color: #D8D8F6;
              border-color: #EF959D;  
         }
         
-         a:hover:not(.active)
+a:hover:not(.active)
         {                       
              color: #D8D8F6;         
         }             
         
-        a
+a
         {     
             padding:5px;
             transition-duration: 0.25s;      
@@ -247,22 +238,21 @@
             font-family: audimat, Verdana, Helvetica, sans-serif;
            
         }
-       
-       
-        
-        td
+               
+td
         {
              border: 4px solid;
              border-bottom: none;
         }
 
-         th
+th
          {
              border: 4px solid;
              border-top: none;
              border-bottom: none;
         }
-        p
+
+p
         {    
             margin-top: 5px;
             margin-bottom: 15px;         
@@ -270,28 +260,30 @@
             font-family: audimat, Verdana, Helvetica, sans-serif;
             font-size:20px;
         }
-        h3
+
+h3
         {
             
              margin-top: 5px;
             margin-bottom: 5px;
         }
         
-        h1, h2{
+h1, h2{
 
             text-shadow: 1px 1px #EF959D;
         }      
 
-        h3{
+h3{
 
             text-shadow: 2px 2px  rgba(0, 0, 0, 0.74);
         }
-          img.picture
+
+img.picture
          {
              border: 3px solid;           
          }
       
-         hr
+hr
        {
            border: 1px solid #D8D8F6;
            width: 95%;
@@ -299,14 +291,13 @@
            background-color: #D8D8F6;
        }
 
-        header{
+header{
             margin:auto;
             margin-left: 15%;
             margin-right: 15%;
         }
 
-
-        li, a
+li, a
         {
              display:block;
              text-decoration:none;         
@@ -314,7 +305,7 @@
              margin-right:7px;
         }
 
-        ul
+ul
         {
             background-image: url(images/transparency.png);
             background-size: cover;
@@ -326,7 +317,7 @@
             border-color: #7AE7C7;          
         }
 
-         body
+body
         {
             position: relative;
            background-color: black;
@@ -336,14 +327,15 @@
            background-attachment: fixed;
         }
 
-        .pageFill 
+.pageFill 
         {
             width: auto;
             height: auto;
             padding-right:10px;
 
         }
-         footer
+
+footer
          {      
             position:fixed;
              bottom:0;
@@ -355,7 +347,8 @@
             background-size: cover;
              
          }
-          table 
+
+table 
         {
             background-image: url(images/transparency.png);
             background-repeat: no-repeat;
@@ -372,7 +365,7 @@
             font-family: audimat, Verdana, Helvetica, sans-serif;
         }
 
-           form 
+form 
         {
             background-image: url(images/transparency.png);
             background-repeat: no-repeat;
@@ -393,7 +386,7 @@
              font-size:large;
         }      
          
-            input.button1
+input.button1
         {  
            font-size:larger;
            background-color: #8DA1B9;
@@ -405,7 +398,7 @@
            text-align:center;
         }
          
-        input.button2
+input.button2
         {
            font-size:larger;
            background-color: #8DA1B9;
@@ -417,26 +410,28 @@
            text-align:center;
         }
       
-        label
+label
         {
             font-family: audimat, Verdana, Helvetica, sans-serif;
         }
         
-        input.button1:hover
+input.button1:hover
         {
            background-color: #7AE7C7;
            color: #8DA1B9;
            border-style:solid;
            border-color:#7AE7C7;
         }
-        input.button2:hover
+
+input.button2:hover
         {
            background-color: #7AE7C7;
            color: #8DA1B9;
            border-style:solid;
            border-color:#7AE7C7;          
         }
-       input
+
+input
        {
            transition-duration: 0.5s;
            margin-left: auto;
@@ -445,13 +440,14 @@
            border-width: medium;
            font-family: audimat, Verdana, Helvetica, sans-serif;       
         }
-        input.radial
+
+input.radial
         {
            margin-left: 5px;
            margin-right: 15px; 
         }
         
-        select
+select
        {
            margin-left: 5px;
            margin-right: 5px;
@@ -460,7 +456,7 @@
            border-width: medium;
        }
 
-       textarea
+textarea
        {
            margin-left:auto;
            margin-right:auto;
@@ -468,51 +464,54 @@
            border-bottom-style: solid;
            border-width: medium;
            font-family: audimat, Verdana, Helvetica, sans-serif; 
-       }      
-         html, body
+       } 
+     
+html, body
          {
             min-height: 100%;
          } 
 
-           label, h3.first
+label, h3.first
        {
             color: #D8D8F6;
        }
 
-       td, th, table, tr
+td, th, table, tr
        {
            border-color: #7AE7C7;
        }  
        
-       img.picture
+img.picture
        {
             border-color: #8DA1B9;
        }
-       h3.second 
+
+h3.second 
        {
             color: #EF959D;
        }
 
-       input, select, textarea
-       {
-           border-color: #7AE7C7;
-       }
-       form
+input, select, textarea
        {
            border-color: #7AE7C7;
        }
 
-        .backgroundColor1{background-color: #D8D8F6;}
-        .backgroundColor2{background-color: #8DA1B9;}
-        .backgroundTransparent{background-image: url(images/transparencyBar.png); background-repeat: no-repeat; background-size: 100% 100%;}
-        .backgroundTransparentPlain{background-image: url(images/transparencyBarPlain.png); background-repeat: no-repeat; background-size: cover;}
+form
+       {
+           border-color: #7AE7C7;
+       }
 
-         .color1{color: #D8D8F6;}
-        .color2{color: #7AE7C7;}
+.backgroundColor1{background-color: #D8D8F6;}
+.backgroundColor2{background-color: #8DA1B9;}
+.backgroundTransparent{background-image: url(images/transparencyBar.png); background-repeat: no-repeat; background-size: 100% 100%;}
+.backgroundTransparentPlain{background-image: url(images/transparencyBarPlain.png); background-repeat: no-repeat; background-size: cover;}
+
+.color1{color: #D8D8F6;}
+.color2{color: #7AE7C7;}
         
-        .textAlignCenter{text-align:center;}
-        .fontSpaceman{font-family:spaceman;}
-         .fontMain{font-family: audimat, Verdana, Helvetica, sans-serif;}
+.textAlignCenter{text-align:center;}
+.fontSpaceman{font-family:spaceman;}
+.fontMain{font-family: audimat, Verdana, Helvetica, sans-serif;}
 
         
         
