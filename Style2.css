@@ -20,6 +20,7 @@
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  padding: 0px;
   margin: auto;
   margin-bottom:20px;
    margin-top:20px;
