@@ -14,6 +14,19 @@
             src: url('fonts/AUdimat-Regular.otf');
         }
 
+.botAlign
+        {          
+            margin-top: 1.5cm;
+            margin-bottom: 1cm;
+        }
+
+.spreadImgs
+        {
+            color:#D8D8F6;
+            margin-left: 15px;
+             margin-right: 15px;
+        }
+
 * {box-sizing:border-box}
 
 .slideshow-container {
