@@ -1,0 +1,113 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Style2.css">
+    <title>Dimension Assets</title>
+    <meta name="description" content="HTML5 Template">   
+</head>
+
+<body>
+
+    <div onmouseover="mouseOverMenu()" onmouseleave="mouseLeaveMenu()" class="dropdown" style="float:left;">
+        <a class="dropbtn1" id="mainMenu">Menu &#8594;</a>
+        <div class="dropdown-content" id="content" style="text-align:center; left:15px;">
+            <a href="index.htm">Home</a>
+            <a href="contactus.htm">Contact Us</a>
+            <div class="dropdown2">
+                <a onclick="productMenu()" id="productsLink" class="dropbtn2">Products &#8594;</a>
+                <div id="myDropdown" class="dropdown-content2" style="left:8px;">
+                    <a href="assets.htm">Assets</a>
+                    <a href="packages.htm">Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="textAlignCenter" style="align-content:center;">
+        <header class="backgroundTransparent">
+            <h1 class="color1 fontSpaceman" style="font-size:55px">dimension<br />assets<br /></h1>
+        </header>
+
+        <h2 class="color2 fontSpaceman" style="font-size:45px">next generation game assets<br /></h2>
+
+        <img class="marginIncrease" src="images/Hr.png" width="100%" height="1%" />
+        <br />
+        <h3 class="first fontMain color1" style="font-size:30px">
+            Are you an independent game developer looking to take your graphics to the next level? <br />
+            Dimension Assets can provide your game with the original assets it needs, at an affordable price. <br />
+            Cel-shaded? Retro? Stylized? Realistic? Whichever style you're looking for, Dimension Assets can handle it. <br />
+        </h3>
+    </div>
+    <img class="marginIncrease" src="images/Hr.png" width="100%" height="1%" />
+    <br />
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext fontMain color1"><h3 style="font-size:25px">1 / 5</h3></div>
+            <img src="images/landscape.jpg" style="width:100%">
+            <div class="text"><h3 class="first fontMain color2 botAlign" style="font-size:40px">Landscapes</h3></div>
+           
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext fontMain color1"><h3 style="font-size:25px">2 / 5</h3></div>
+            <img src="images/texture.jpg" style="width:100%">
+            <div class="text"><h3 class="first fontMain color2 botAlign" style="font-size:40px">HD Textures</h3></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext fontMain color1"><h3 style="font-size:25px">3 / 5</h3></div>
+            <img src="images/character.jpg" style="width:100%">
+            <div class="text"><h3 class="first fontMain color2 botAlign" style="font-size:40px">Character Models</h3></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext fontMain color1"><h3 style="font-size:25px">4 / 5</h3></div>
+            <img src="images/item.jpg" style="width:100%">
+            <div class="text"><h3 class="first fontMain color2 botAlign" style="font-size:40px">Objects</h3></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext fontMain color1"><h3 style="font-size:25px">5 / 5</h3></div>
+            <img src="images/structure.jpg" style="width:100%">
+            <div class="text"><h3 class="first fontMain color2 botAlign" style="font-size:40px">Structures</h3></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <div class="textAlignCenter" style="align-content:center;">
+        <h3 class="first fontMain color1 botAlign" style="font-size:30px">
+            <em>Our assets are compatible with all major game engines.</em>
+        </h3>
+        <h3>
+            <img class="spreadImgs" src="images/unity3d-logo.png" width="300" height="127"/>
+            <img class="spreadImgs" src="images/unreal-engine-logo.png" width="300" height="127" />
+            <img class="spreadImgs" src="images/cry-engine-logo.png" width="300" height="127" />
+        </h3>
+    </div>
+    <br />
+    <div class="overlay" style="font-size: 10px">
+        <footer>
+            <p id="date"></p>
+            <script>
+                var d = new Date();
+                document.getElementById("date").innerHTML = "\tToday is: " + d.toDateString() + "   ";
+            </script>
+        </footer>
+    </div>
+    <script src="FirstScript.js"></script>  
+</body>
+</html>
