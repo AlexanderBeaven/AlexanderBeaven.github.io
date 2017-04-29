@@ -1,8 +1,60 @@
-﻿body 
+﻿@font-face 
+        {
+            font-family: spaceman;
+            src: url('fonts/conthrax-sb.ttf');
+        }
+
+@font-face 
+        {
+            font-family: audimat;
+            src: url('fonts/AUdimat-Regular.otf');
+        }
+
+body 
 {
     background-color: black;
-     background-image: url(srimages/Stars.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
+    background-image: url(srimages/Stars.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 
 }
+
+.title
+{
+    background-image: url(images/transparencyBar.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: spaceman;
+    font-size:xx-large;
+    text-align:center;
+    align-content:center;
+    color:#D8D8F6;
+    padding:10px;
+    margin-top:20px;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.ship1
+{   
+    position:fixed;    
+    left:-10%;
+    margin-top:10%;
+}
+
+.ship2 
+{    
+    position:fixed;    
+    left:-10%;  
+    margin-top:20%;
+}
+
+.goLight
+{
+    overflow:auto;
+    float:left;
+    position:fixed;
+    margin-top:20px;
+}
+
+
