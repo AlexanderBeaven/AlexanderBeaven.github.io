@@ -6,7 +6,8 @@ var ship3Left = 0;
 var ship4Left = 0;
 var ship5Left = 0;
 
-var finish = screen.width;
+var finish = screen.width - 70;
+var speed = screen.width / 20;
 
 function GameStarted()
 {
@@ -44,7 +45,7 @@ function loop()
 {
     if (running)
     {
-        var rand = Math.round(Math.random() * 100 + 100);
+        var rand = 100;
         setTimeout(function ()
         {
             MoveShips();
@@ -57,7 +58,7 @@ function MoveShips()
 {      
     if (ship1Left < finish && ship2Left < finish && ship3Left < finish && ship4Left < finish && ship5Left < finish)
     {
-            var amt = Math.round(Math.random() * 100);
+        var amt = Math.round(Math.random() * speed + 1);
             if (ship1Left + amt <= finish) {
                 ship1Left += amt;
             }
@@ -67,7 +68,7 @@ function MoveShips()
             }
             document.getElementById("ship1").style.left = ship1Left.toString() + "px";         
    
-            var amt = Math.round(Math.random() * 100);
+            var amt = Math.round(Math.random() * speed + 1);
             if (ship2Left + amt <= finish) {
                 ship2Left += amt;
             }
@@ -76,7 +77,7 @@ function MoveShips()
             }           
             document.getElementById("ship2").style.left = ship2Left.toString() + "px";
 
-            var amt = Math.round(Math.random() * 100);
+            var amt = Math.round(Math.random() * speed + 1);
             if (ship3Left + amt <= finish) {
                 ship3Left += amt;
             }
@@ -85,7 +86,7 @@ function MoveShips()
             }
             document.getElementById("ship3").style.left = ship3Left.toString() + "px";
 
-            var amt = Math.round(Math.random() * 100);
+            var amt = Math.round(Math.random() * speed + 1);
             if (ship4Left + amt <= finish) {
                 ship4Left += amt;
             }
@@ -94,7 +95,7 @@ function MoveShips()
             }
             document.getElementById("ship4").style.left = ship4Left.toString() + "px";
 
-            var amt = Math.round(Math.random() * 100);
+            var amt = Math.round(Math.random() * speed + 1);
             if (ship5Left + amt <= finish) {
                 ship5Left += amt;
             }
