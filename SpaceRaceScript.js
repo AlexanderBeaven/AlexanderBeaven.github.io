@@ -9,15 +9,31 @@ var ship2Amt = 0;
 var ship3Amt = 0;
 var ship4Amt = 0;
 var rand = 0;
+var accel = 20;
 
 var finish = screen.width - 100;
 var speed = screen.width / 12;
+
+function DynamicSizes() //resize and respace ships depending on screen size
+{
+
+}
 
 function GameStarted()
 {
     if (!running && reset)
     {
+        speed = screen.width / 12;
         finish = screen.width - 100;
+        ship1Left = 0;
+        ship2Left = 0;
+        ship3Left = 0;
+        ship4Left = 0;
+        ship1Amt = 0;
+        ship2Amt = 0;
+        ship3Amt = 0;
+        ship4Amt = 0;
+        rand = 0;
         reset = false;
         running = true;
         document.getElementById("message").style.visibility = "hidden";
@@ -34,22 +50,12 @@ function Reset()
 {
     if (!reset)
     {
-    reset = true;
-    speed = screen.width / 12;
-    ship1Left = 0;
-    ship2Left = 0;
-    ship3Left = 0;
-    ship4Left = 0;
-    ship1Amt = 0;
-    ship2Amt = 0;
-    ship3Amt = 0;
-    ship4Amt = 0;
-    rand = 0;
-    document.getElementById("ship1").style.left = "0%";
-    document.getElementById("ship2").style.left = "0%";
-    document.getElementById("ship3").style.left = "0%";
-    document.getElementById("ship4").style.left = "0%";
-    document.getElementById("message").style.visibility = "hidden";
+        reset = true;
+        document.getElementById("ship1").style.left = "0%";
+        document.getElementById("ship2").style.left = "0%";
+        document.getElementById("ship3").style.left = "0%";
+        document.getElementById("ship4").style.left = "0%";
+        document.getElementById("message").style.visibility = "hidden";
     }
 }
 
@@ -62,9 +68,10 @@ function loop()
         setTimeout(function ()
         {
             MoveShips();
-            loop();
-            speed += 10;
+            speed += accel;
             rand = 495;
+            loop();
+           
         }, rand);     
         
     }
