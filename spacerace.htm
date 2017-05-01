@@ -9,23 +9,25 @@
 </head>
 <body>
     <div class="overlay">
-        <div class="title ">
-            The Great Space Race
+        <div class="overlay2">
+            <div class="title ">
+                The Great Space Race
+            </div>
+
+            <a onclick="Reset()" id="message" class="message">Click the red light to begin!</a>
+
+            <div class="goLight"><a id="startButton" onclick="GameStarted()" class="lightButton"></a></div>
+
+            <div id="ship1" class="ship"><img src="srimages/Ship4.png" style="width: 61px; height: 58px; margin-top: 300%;" /></div>
+
+            <div id="ship2" class="ship"><img src="srimages/Ship2.png" style="width: 58px; height: 57px; margin-top: 500%;" /></div>
+
+            <div id="ship3" class="ship"><img src="srimages/Ship3.png" style="width: 60px; height: 53px; margin-top: 650%;" /></div>
+
+            <div id="ship4" class="ship"><img src="srimages/Ship1.png" style="width: 57px; height: 55px; margin-top: 850%;" /></div>
+
+            <div id="ship5" class="ship"><img src="srimages/Ship5.png" style="width: 57px; height: 58px; margin-top: 1025%;" /></div>
         </div>
-
-        <a onclick="Reset()" id="message" class="message">Click the red light to begin!</a>
-
-        <div class="goLight"><a id="startButton" onclick="GameStarted()" class="lightButton"></a></div>
-
-        <div id="ship1" class="ship"><img src="srimages/Ship4.png" style="width: 61px; height: 58px; margin-top: 300%;" /></div>
-
-        <div id="ship2" class="ship"><img src="srimages/Ship2.png" style="width: 58px; height: 57px; margin-top: 500%;" /></div>
-
-        <div id="ship3" class="ship"><img src="srimages/Ship3.png" style="width: 60px; height: 53px; margin-top: 650%;" /></div>
-
-        <div id="ship4" class="ship"><img src="srimages/Ship1.png" style="width: 57px; height: 55px; margin-top: 850%;" /></div>
-
-        <div id="ship5" class="ship"><img src="srimages/Ship5.png" style="width: 57px; height: 58px; margin-top: 1025%;" /></div>
     </div>
     <script src="SpaceRaceScript.js"></script>  
 </body>
