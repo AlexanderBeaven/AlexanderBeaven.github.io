@@ -61,7 +61,7 @@ function loop()
 {
     if (running)
     {
-        var rand = 1000;
+        var rand = 990;
         setTimeout(function ()
         {
             MoveShips();
@@ -73,7 +73,7 @@ function loop()
 function MoveShips()
 {      
     if (ship1Left < finish && ship2Left < finish && ship3Left < finish && ship4Left < finish) {
-        var amt = Math.round(Math.random() * speed + 20);
+        var amt = Math.round(Math.random() * speed + 5);
         if (amt < ship1Amt) //ship can only gain speed
         {
             amt = ship1Amt;
@@ -89,7 +89,7 @@ function MoveShips()
         ship1Amt = amt;
         document.getElementById("ship1").style.left = ship1Left.toString() + "px";
 
-        var amt = Math.round(Math.random() * speed + 20);
+        var amt = Math.round(Math.random() * speed + 5);
         if (amt < ship2Amt) //ship can only gain speed
         {
             amt = ship2Amt;
@@ -105,7 +105,7 @@ function MoveShips()
         ship2Amt = amt;
         document.getElementById("ship2").style.left = ship2Left.toString() + "px";
 
-        var amt = Math.round(Math.random() * speed + 20);
+        var amt = Math.round(Math.random() * speed + 5);
         if (amt < ship3Amt) //ship can only gain speed
         {
             amt = ship3Amt;
@@ -121,7 +121,7 @@ function MoveShips()
         ship3Amt = amt;
         document.getElementById("ship3").style.left = ship3Left.toString() + "px";
 
-        var amt = Math.round(Math.random() * speed + 20);
+        var amt = Math.round(Math.random() * speed + 5);
         if (amt < ship4Amt) //ship can only gain speed
         {
             amt = ship4Amt;
