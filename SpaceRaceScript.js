@@ -13,6 +13,8 @@ function GameStarted()
 {
     if (!running && reset)
     {
+        finish = screen.width - 50;
+        speed = screen.width / 20;
         reset = false;
         running = true;
         document.getElementById("message").style.visibility = "hidden";
