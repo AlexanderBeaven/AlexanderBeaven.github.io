@@ -7,14 +7,14 @@ var ship4Left = 0;
 var ship5Left = 0;
 
 var finish = screen.width - 70;
-var speed = screen.width / 20;
+var speed = screen.width / 50;
 
 function GameStarted()
 {
     if (!running && reset)
     {
         finish = screen.width - 50;
-        speed = screen.width / 20;
+        speed = screen.width / 50;
         reset = false;
         running = true;
         document.getElementById("message").style.visibility = "hidden";
