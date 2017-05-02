@@ -118,10 +118,10 @@
 {   
     position:relative;    
     left:0%;
-   -webkit-transition: all .51s linear;
-  -moz-transition: all .51s linear;
-  -o-transition: all .51s linear;
-   transition: all .51s linear;
+   -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+   transition: all .5s linear;
    z-index: 5;
    margin-top: 4%;
    overflow: hidden;

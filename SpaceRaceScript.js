@@ -80,7 +80,7 @@ function loop()
         {
             MoveShips();
             speed += accel;
-            rand = 495;
+            rand = 500;
             loop();
            
         }, rand);     
