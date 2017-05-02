@@ -8,6 +8,9 @@ var ship1Amt = 0;
 var ship2Amt = 0;
 var ship3Amt = 0;
 var ship4Amt = 0;
+var background3Scroll = 250;
+var background2Scroll = 280;
+var background1Scroll = 300;
 var rand = 0;
 var finish = screen.width - 100;
 var speed = screen.width / 15;
@@ -129,6 +132,8 @@ function MoveShips()
         ship4Amt = amt;
         document.getElementById("ship4").style.left = ship4Left.toString() + "px";
         document.getElementById("ship4").style.right = (document.getElementById("ship4").style.right - amt).toString() + "px";
+
+
     }
     else
     {
