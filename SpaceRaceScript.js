@@ -14,7 +14,7 @@ var background1Scroll = 300;
 var rand = 0;
 var finish = screen.width - 100;
 var speed = screen.width / 15;
-var accel = 15;
+var accel = 25;
 var buffer = 2;
 
 function DynamicSizes() //resize and respace ships depending on screen size
@@ -139,7 +139,8 @@ function MoveShips()
     else {
         running = false;
         document.getElementById("startButton").style.backgroundImage = "url(srimages/RedLight.png)";
-        document.getElementById("message").style.visibility = "visible";
+        document.getElementById("message").style.visibility = "visible"; //solid 2px #7AE7C7
+        document.getElementById("message").style.border = "solid 2px #7AE7C7";
         document.getElementById("ship1img").src = "srimages/Ship1.png";
         document.getElementById("ship2img").src = "srimages/Ship2.png";
         document.getElementById("ship3img").src = "srimages/Ship3.png";
