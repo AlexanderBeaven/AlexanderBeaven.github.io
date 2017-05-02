@@ -29,10 +29,10 @@
 .overlay2{
   position:fixed;
     background-image: url(srimages/Stars2.png);
- -webkit-animation:280s scroll infinite linear;
-  -moz-animation:280s scroll infinite linear;
-  -o-animation:280s scroll infinite linear;
-  animation:280s scroll infinite linear;
+ -webkit-animation:275s scroll infinite linear;
+  -moz-animation:275s scroll infinite linear;
+  -o-animation:275s scroll infinite linear;
+  animation:275s scroll infinite linear;
   top:0;
   left:0;
   width:100%;
@@ -118,10 +118,10 @@
 {   
     position:relative;    
     left:0%;
-   -webkit-transition: all .5s linear;
-  -moz-transition: all .5s linear;
-  -o-transition: all .5s linear;
-   transition: all .5s linear;
+   -webkit-transition: all .51s linear;
+  -moz-transition: all .51s linear;
+  -o-transition: all .51s linear;
+   transition: all .51s linear;
    z-index: 5;
    margin-top: 4%;
    overflow: hidden;
