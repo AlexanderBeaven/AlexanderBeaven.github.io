@@ -9,21 +9,29 @@ var ship2Amt = 0;
 var ship3Amt = 0;
 var ship4Amt = 0;
 var rand = 0;
-var accel = 20;
-
 var finish = screen.width - 100;
-var speed = screen.width / 12;
+var speed = screen.width / 15;
+var accel = 20;
+var buffer = 3;
 
 function DynamicSizes() //resize and respace ships depending on screen size
 {
-
+    var shipDim = screen.height * .1;
+    document.getElementById("ship1img").style.width = shipDim.toString() + "px";
+    document.getElementById("ship2img").style.width = shipDim.toString() + "px";
+    document.getElementById("ship3img").style.width = shipDim.toString() + "px";
+    document.getElementById("ship4img").style.width = shipDim.toString() + "px";
+    document.getElementById("ship1img").style.height = shipDim.toString() + "px";
+    document.getElementById("ship2img").style.height = shipDim.toString() + "px";
+    document.getElementById("ship3img").style.height = shipDim.toString() + "px";
+    document.getElementById("ship4img").style.height = shipDim.toString() + "px";
 }
 
 function GameStarted()
 {
     if (!running && reset)
-    {
-        speed = screen.width / 12;
+    {     
+        speed = screen.width / 15;
         finish = screen.width - 100;
         ship1Left = 0;
         ship2Left = 0;
@@ -82,7 +90,7 @@ function MoveShips()
     //see if any ships have crossed finish line
     if (ship1Left < finish && ship2Left < finish && ship3Left < finish && ship4Left < finish)
     {
-        var amt = Math.round(Math.random() * speed);
+        var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship1Amt) //ship can only gain speed
         {
             amt = ship1Amt;
@@ -90,8 +98,9 @@ function MoveShips()
         ship1Left += amt;          
         ship1Amt = amt;
         document.getElementById("ship1").style.left = ship1Left.toString() + "px";
+        document.getElementById("ship1").style.right = (document.getElementById("ship1").style.right - amt).toString() + "px";
 
-        var amt = Math.round(Math.random() * speed);
+        var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship2Amt) //ship can only gain speed
         {
             amt = ship2Amt;
@@ -99,8 +108,9 @@ function MoveShips()
         ship2Left += amt;
         ship2Amt = amt;
         document.getElementById("ship2").style.left = ship2Left.toString() + "px";
+        document.getElementById("ship2").style.right = (document.getElementById("ship2").style.right - amt).toString() + "px";
 
-        var amt = Math.round(Math.random() * speed);
+        var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship3Amt) //ship can only gain speed
         {
             amt = ship3Amt;
@@ -108,8 +118,9 @@ function MoveShips()
         ship3Left += amt;
         ship3Amt = amt;
         document.getElementById("ship3").style.left = ship3Left.toString() + "px";
+        document.getElementById("ship3").style.right = (document.getElementById("ship3").style.right - amt).toString() + "px";
 
-        var amt = Math.round(Math.random() * speed);
+        var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship4Amt) //ship can only gain speed
         {
             amt = ship4Amt;
@@ -117,6 +128,7 @@ function MoveShips()
         ship4Left += amt;
         ship4Amt = amt;
         document.getElementById("ship4").style.left = ship4Left.toString() + "px";
+        document.getElementById("ship4").style.right = (document.getElementById("ship4").style.right - amt).toString() + "px";
     }
     else
     {
