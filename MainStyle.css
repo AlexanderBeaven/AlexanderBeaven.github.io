@@ -88,7 +88,7 @@
     position: fixed;
     margin-left: 34%;
     margin-right: 34%;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-bottom: auto;
     width: 32%;
     height: auto;
@@ -123,16 +123,22 @@
   -o-transition: all .5s linear;
    transition: all .5s linear;
    z-index: 5;
-   margin-top: 4%;
+   margin-top: 3%;
    overflow: hidden;
 }
 
-.trasition
+.shipImg
 {
- -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -o-transition: all 2s ease;
-   transition: all 2s ease;
+ 
+}
+
+.backgrounds
+{
+    position:absolute;
+   -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+   transition: all .5s linear;
 }
 
 .goLight

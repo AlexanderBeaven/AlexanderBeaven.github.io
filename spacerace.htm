@@ -8,24 +8,26 @@
     <meta name="description" content="HTML5 Template">   
 </head>
 <body onload="DynamicSizes()">
-    <div class="overlay" id="over1">
-        <div class="overlay2" id="over2">
-            <div class="overlay3" id="over3">
-                <div class="title ">
-                    The Great Space Race
-                </div>
-                <div class="transition">
-                    <a onclick="Reset()" id="message" class="message">Click the red circle to begin.</a>
+    <div id="backgroundContainer" class="backgrounds">
+        <div class="overlay" id="over1">
+            <div class="overlay2" id="over2">
+                <div class="overlay3" id="over3">
+                    <div class="title ">
+                        The Great Space Race
+                    </div>
+                    <div>
+                        <a onclick="Reset()" id="message" class="message">Click the red circle to begin.</a>
 
-                    <div class="goLight"><a id="startButton" onclick="GameStarted()" class="lightButton"></a></div>
+                        <div class="goLight"><a id="startButton" onclick="GameStarted()" class="lightButton"></a></div>
 
-                    <div id="ship1" class="ship"><img id="ship4img" class="transition" src="srimages/Ship4.png" style="width: 100px; height: 100px; margin-top: 6%;" /></div>
+                        <div id="ship1" class="ship" style="margin-top:10%;"><img id="ship4img" class="shipImg" src="srimages/Ship4.png" style="width: 100px; height: 100px;" /></div>
 
-                    <div id="ship2" class="ship"><img id="ship2img" class="transition" src="srimages/Ship2.png" style="width: 100px; height: 100px; " /></div>
+                        <div id="ship2" class="ship"><img id="ship2img" class="shipImg" src="srimages/Ship2.png" style="width: 100px; height: 100px; " /></div>
 
-                    <div id="ship3" class="ship"><img id="ship3img" class="transition" src="srimages/Ship3.png" style="width: 100px; height: 100px; " /></div>
+                        <div id="ship3" class="ship"><img id="ship3img" class="shipImg" src="srimages/Ship3.png" style="width: 100px; height: 100px; " /></div>
 
-                    <div id="ship4" class="ship"><img id="ship1img" class="transition" src="srimages/Ship1.png" style="width: 100px; height: 100px; " /></div>
+                        <div id="ship4" class="ship"><img id="ship1img" class="shipImg" src="srimages/Ship1.png" style="width: 100px; height: 100px; " /></div>
+                    </div>
                 </div>
             </div>
         </div>
