@@ -8,16 +8,24 @@ var ship1Amt = 0;
 var ship2Amt = 0;
 var ship3Amt = 0;
 var ship4Amt = 0;
+var background1 = 0;
+var background2 = 0;
+var background3 = 0;
+var back1mult = 10;
+var back2mult = 20;
+var back3mult = 30;
 var rand = 0;
-var speed = window.innerWidth / 20;
+var speed = window.innerWidth / 30;
 var finish = window.innerWidth - 100;
-var accel = 25; //speed range increase
-var buffer = 2; //least amt of speed
+var accel = 10; //speed range increase
+var buffer = 0; //least amt of speed
 var ships = document.getElementsByClassName("ship");
 var shipImgs = document.getElementsByClassName("shipImg");
+var backgrounds = document.getElementsByClassName("overlay");
 
 function DynamicSizes() //resize and respace ships depending on screen size
 {
+    loop();
     var shipDim = window.innerHeight * .13;
     for (i = 0; i < ships.length; i++)
     {
@@ -32,8 +40,8 @@ function GameStarted() //user has clicked red circle
 {
     if (!running && reset)
     {     
-        speed = window.innerWidth / 20;
-        finish = window.innerWidth - 100;
+        speed = window.innerWidth / 50;
+        finish = window.innerWidth - 68;
 
         ship1Left = 0;
         ship2Left = 0;
@@ -54,8 +62,6 @@ function GameStarted() //user has clicked red circle
         document.getElementById("ship2img").src = "srimages/Ship2speed.png";
         document.getElementById("ship3img").src = "srimages/Ship3speed.png";
         document.getElementById("ship4img").src = "srimages/Ship4speed.png";
-
-        loop();
     }
 }
 
@@ -70,76 +76,121 @@ function Reset() //reset for new race
             ships[i].style.left = "0%";           
         }
 
+        for (i = 0; i < backgrounds.length; i++)
+        {
+            backgrounds[i].style.left = "0px";
+        }
+
+        background1 = 0;
+        background2 = 0;
+        background3 = 0;
+        back1mult = 5;
+        back2mult = 10;
+        back3mult = 20;
+
         document.getElementById("message").style.visibility = "hidden";
     }
 }
 
+function BackgroundScroll()
+{
+    //move backgrounds to give illusion of speed       
+    for (i = 0; i < backgrounds.length; i++) {
+        if (i == 0) {
+            if (running) {
+                back1mult *= 1.2;
+                background1 -= back1mult;
+
+            } else {
+                background1 -= 0;
+            }
+            backgrounds[i].style.left = background1.toString() + "px";
+        }
+        else if (i == 1) {
+            if (running) {
+                back2mult *= 1.2;
+                background2 -= back2mult;
+
+            } else {
+                background2 -= 1;
+            }
+            backgrounds[i].style.left = background2.toString() + "px";
+        }
+        else if (i == 2) {
+            if (running) {
+                back3mult *= 1.2;
+                background3 -= back3mult;
+
+            } else {
+                background3 -= 2;
+            }
+            backgrounds[i].style.left = background3.toString() + "px";
+        }
+
+    }
+}
 
 function loop()
-{
-    if (running)
-    { 
+{    
         setTimeout(function ()
         {
-            MoveShips();
+            if (running)
+            { 
+                MoveShips();
+            }
+            BackgroundScroll();
             speed += accel;
             rand = 500;
             loop();          
-        }, rand);            
-    }
-};
+        }, rand);               
+}
 
 function MoveShips()
-{
+{   
     //see if any ships have crossed finish line
     if (ship1Left < finish && ship2Left < finish && ship3Left < finish && ship4Left < finish) {
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship1Amt) //ship can only gain speed
         {
-            amt = ship1Amt + 2;
+            amt = ship1Amt + 1;
         }
         ship1Left += amt;
         ship1Amt = amt;
         document.getElementById("ship1").style.left = ship1Left.toString() + "px";
-        document.getElementById("ship1").style.right = (document.getElementById("ship1").style.right - amt).toString() + "px";
+        //document.getElementById("ship1").style.right = (document.getElementById("ship1").style.right - amt).toString() + "px";
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship2Amt) //ship can only gain speed
         {
-            amt = ship2Amt + 2;
+            amt = ship2Amt + 1;
         }
         ship2Left += amt;
         ship2Amt = amt;
         document.getElementById("ship2").style.left = ship2Left.toString() + "px";
-        document.getElementById("ship2").style.right = (document.getElementById("ship2").style.right - amt).toString() + "px";
+        //document.getElementById("ship2").style.right = (document.getElementById("ship2").style.right - amt).toString() + "px";
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship3Amt) //ship can only gain speed
         {
-            amt = ship3Amt + 2;
+            amt = ship3Amt + 1;
         }
         ship3Left += amt;
         ship3Amt = amt;
         document.getElementById("ship3").style.left = ship3Left.toString() + "px";
-        document.getElementById("ship3").style.right = (document.getElementById("ship3").style.right - amt).toString() + "px";
+       // document.getElementById("ship3").style.right = (document.getElementById("ship3").style.right - amt).toString() + "px";
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship4Amt) //ship can only gain speed
         {
-            amt = ship4Amt + 2;
+            amt = ship4Amt + 1;
         }
         ship4Left += amt;
         ship4Amt = amt;
         document.getElementById("ship4").style.left = ship4Left.toString() + "px";
-        document.getElementById("ship4").style.right = (document.getElementById("ship4").style.right - amt).toString() + "px";
-
-        //move backgrounds to give illusion of speed ...not working
-        var backgroundAmt = Math.max(ship1Amt, ship2Amt, ship3Amt, ship4Amt);       
-        document.getElementById("backgroundContainer").style.left = (backgroundAmt - (window.innerWidth / 20)).toString() + "px";
-       
+        //document.getElementById("ship4").style.right = (document.getElementById("ship4").style.right - amt).toString() + "px";          
     }
-
-    else {
+    else
+    {
         running = false;
         document.getElementById("startButton").style.backgroundImage = "url(srimages/RedLight.png)";
         document.getElementById("message").style.visibility = "visible"; //solid 2px #7AE7C7
