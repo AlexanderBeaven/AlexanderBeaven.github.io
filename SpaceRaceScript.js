@@ -15,7 +15,7 @@ var back1mult = 10;
 var back2mult = 20;
 var back3mult = 30;
 var rand = 0;
-var speed = window.innerWidth / 30;
+var speed = window.innerWidth / 40;
 var finish = window.innerWidth - 100;
 var accel = 10; //speed range increase
 var buffer = 0; //least amt of speed
@@ -84,9 +84,9 @@ function Reset() //reset for new race
         background1 = 0;
         background2 = 0;
         background3 = 0;
-        back1mult = 5;
-        back2mult = 10;
-        back3mult = 20;
+        back1mult = 10;
+        back2mult = 20;
+        back3mult = 30;
 
         document.getElementById("message").style.visibility = "hidden";
     }
@@ -98,31 +98,31 @@ function BackgroundScroll()
     for (i = 0; i < backgrounds.length; i++) {
         if (i == 0) {
             if (running) {
-                back1mult *= 1.2;
+                back1mult *= 1.3;
                 background1 -= back1mult;
 
             } else {
-                background1 -= 0;
+                background1 -= 5;
             }
             backgrounds[i].style.left = background1.toString() + "px";
         }
         else if (i == 1) {
             if (running) {
-                back2mult *= 1.2;
+                back2mult *= 1.3;
                 background2 -= back2mult;
 
             } else {
-                background2 -= 1;
+                background2 -= 10;
             }
             backgrounds[i].style.left = background2.toString() + "px";
         }
         else if (i == 2) {
             if (running) {
-                back3mult *= 1.2;
+                back3mult *= 1.3;
                 background3 -= back3mult;
 
             } else {
-                background3 -= 2;
+                background3 -= 15;
             }
             backgrounds[i].style.left = background3.toString() + "px";
         }
