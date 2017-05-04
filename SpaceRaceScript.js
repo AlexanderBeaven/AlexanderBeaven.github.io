@@ -24,7 +24,7 @@ var shipImgs = document.getElementsByClassName("shipImg");
 var backgrounds = document.getElementsByClassName("overlay");
 
 function DynamicSizes() //resize and respace ships depending on screen size
-{
+{   
     loop();
     var shipDim = window.innerHeight * .13;
     for (i = 0; i < ships.length; i++)
@@ -39,7 +39,7 @@ function DynamicSizes() //resize and respace ships depending on screen size
 function GameStarted() //user has clicked red circle
 {
     if (!running && reset)
-    {     
+    {      
         speed = window.innerWidth / 50;
         finish = window.innerWidth - 68;
 
@@ -76,11 +76,14 @@ function Reset() //reset for new race
             ships[i].style.left = "0%";           
         }
 
-        for (i = 0; i < backgrounds.length; i++)
-        {
-            backgrounds[i].style.left = "0px";
-        }
-
+        document.getElementById("ship1").classList.remove("transition");
+        document.getElementById("ship2").classList.remove("transition");
+        document.getElementById("ship3").classList.remove("transition");
+        document.getElementById("ship4").classList.remove("transition");
+        document.getElementById("background1").classList.remove("transition");
+        document.getElementById("background2").classList.remove("transition");
+        document.getElementById("background3").classList.remove("transition");
+       
         background1 = 0;
         background2 = 0;
         background3 = 0;
@@ -88,17 +91,33 @@ function Reset() //reset for new race
         back2mult = 20;
         back3mult = 30;
 
+        for (i = 0; i < backgrounds.length; i++)
+        {
+            backgrounds[i].style.left = "0px";
+        }
+
         document.getElementById("message").style.visibility = "hidden";
+      
     }
 }
 
 function BackgroundScroll()
 {
+    if (!document.getElementById("ship1").classList.contains("transition"))
+    {
+        document.getElementById("ship1").classList.add("transition");
+        document.getElementById("ship2").classList.add("transition");
+        document.getElementById("ship3").classList.add("transition");
+        document.getElementById("ship4").classList.add("transition");
+        document.getElementById("background1").classList.add("transition");
+        document.getElementById("background2").classList.add("transition");
+        document.getElementById("background3").classList.add("transition");
+    }
     //move backgrounds to give illusion of speed       
     for (i = 0; i < backgrounds.length; i++) {
         if (i == 0) {
             if (running) {
-                back1mult *= 1.3;
+                back1mult *= 1.2;
                 background1 -= back1mult;
 
             } else {
@@ -108,7 +127,7 @@ function BackgroundScroll()
         }
         else if (i == 1) {
             if (running) {
-                back2mult *= 1.3;
+                back2mult *= 1.2;
                 background2 -= back2mult;
 
             } else {
@@ -118,7 +137,7 @@ function BackgroundScroll()
         }
         else if (i == 2) {
             if (running) {
-                back3mult *= 1.3;
+                back3mult *= 1.2;
                 background3 -= back3mult;
 
             } else {
@@ -126,7 +145,6 @@ function BackgroundScroll()
             }
             backgrounds[i].style.left = background3.toString() + "px";
         }
-
     }
 }
 

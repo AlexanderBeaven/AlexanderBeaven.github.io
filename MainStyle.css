@@ -15,15 +15,19 @@
   position:fixed;
   background-repeat:repeat;
   overflow:auto;  
-  -webkit-transition: all .5s linear;
-  -moz-transition: all .5s linear;
-  -o-transition: all .5s linear;
-   transition: all .5s linear;
   top:0;
   left:0;
   width:2000%;
  height:2000%;
  z-index:-1; 
+}
+
+.transition 
+{
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+   transition: all .5s linear;
 }
 
 .message
@@ -39,12 +43,11 @@
     position: fixed;
     margin-left: 34%;
     margin-right: 34%;
-    margin-top: 15%;
+    margin-top: 20%;
     margin-bottom: auto;
     width: 32%;
     height: auto;
     z-index: 100;
-
 }
 
 .title
@@ -67,12 +70,8 @@
 
 .ship
 {   
-    position:relative;    
-    left:0%;
-   -webkit-transition: all .5s linear;
-  -moz-transition: all .5s linear;
-  -o-transition: all .5s linear;
-   transition: all .5s linear;
+   position:relative;    
+   left:0%;  
    z-index: 5;
    margin-top: 3%;
    overflow: hidden;
