@@ -8,13 +8,16 @@ var ship1Amt = 0;
 var ship2Amt = 0;
 var ship3Amt = 0;
 var ship4Amt = 0;
-var background1 = 0;
-var background2 = 0;
-var background3 = 0;
-var back1mult = 10;
-var back2mult = 20;
-var back3mult = 30;
-var rand = 0;
+var back1left = 0;
+var back2left = 0;
+var back3left = 0
+var back1wid = 0;
+var back2wid = 0;
+var back3wid = 0;
+var back1mult = 30;
+var back2mult = 42;
+var back3mult = 54;
+var interval = 0;
 var speed = window.innerWidth / 40;
 var finish = window.innerWidth - 100;
 var accel = 10; //speed range increase
@@ -26,6 +29,11 @@ var backgrounds = document.getElementsByClassName("overlay");
 function DynamicSizes() //resize and respace ships depending on screen size
 {   
     loop();
+
+    back1wid = window.innerWidth + 100;
+    back2wid = window.innerWidth + 100;
+    back3wid = window.innerWidth + 100;
+
     var shipDim = window.innerHeight * .13;
     for (i = 0; i < ships.length; i++)
     {
@@ -41,7 +49,7 @@ function GameStarted() //user has clicked red circle
     if (!running && reset)
     {      
         speed = window.innerWidth / 50;
-        finish = window.innerWidth - 68;
+        finish = window.innerWidth - 100;
 
         ship1Left = 0;
         ship2Left = 0;
@@ -51,7 +59,10 @@ function GameStarted() //user has clicked red circle
         ship2Amt = 0;
         ship3Amt = 0;
         ship4Amt = 0;
-        rand = 0;
+        back1wid = window.innerWidth + 100;
+        back2wid = window.innerWidth + 100;
+        back3wid = window.innerWidth + 100;
+        
 
         reset = false;
         running = true;
@@ -84,12 +95,14 @@ function Reset() //reset for new race
         document.getElementById("background2").classList.remove("transition");
         document.getElementById("background3").classList.remove("transition");
        
-        background1 = 0;
-        background2 = 0;
-        background3 = 0;
-        back1mult = 10;
-        back2mult = 20;
-        back3mult = 30;
+        back1left = 0;
+        back2left = 0;
+        back3left = 0;
+        back1mult = 30;
+        back2mult = 42;
+        back3mult = 54;
+        
+        interval = 0;
 
         for (i = 0; i < backgrounds.length; i++)
         {
@@ -115,35 +128,53 @@ function BackgroundScroll()
     }
     //move backgrounds to give illusion of speed       
     for (i = 0; i < backgrounds.length; i++) {
-        if (i == 0) {
-            if (running) {
+        if (i == 0)
+        {
+            if (running)
+            {
                 back1mult *= 1.2;
-                background1 -= back1mult;
-
-            } else {
-                background1 -= 5;
+                back1left -= back1mult;
+                back1wid += back1mult * 2; 
             }
-            backgrounds[i].style.left = background1.toString() + "px";
+            else
+            {
+                back1left -= 5;
+                back1wid += 5 * 2;
+            }
+            backgrounds[i].style.left = back1left.toString() + "px";
+            backgrounds[i].style.width = back1wid.toString() + "px";
         }
         else if (i == 1) {
             if (running) {
                 back2mult *= 1.2;
-                background2 -= back2mult;
+                back2left -= back2mult;
+                back2wid += back2mult * 2;
+               
 
             } else {
-                background2 -= 10;
+                back2left -= 7;
+                back2wid += 7 * 2;
+                
             }
-            backgrounds[i].style.left = background2.toString() + "px";
+            backgrounds[i].style.left = back2left.toString() + "px";
+            backgrounds[i].style.width = back2wid.toString() + "px";
+            
         }
         else if (i == 2) {
             if (running) {
                 back3mult *= 1.2;
-                background3 -= back3mult;
+                back3left -= back3mult;
+                back3wid += back3mult * 2;
+             
 
             } else {
-                background3 -= 15;
+                back3left -= 9;
+                back3wid += 9 * 2;
+               
             }
-            backgrounds[i].style.left = background3.toString() + "px";
+            backgrounds[i].style.left = back3left.toString() + "px";
+            backgrounds[i].style.width = back3wid.toString() + "px";
+           
         }
     }
 }
@@ -158,9 +189,9 @@ function loop()
             }
             BackgroundScroll();
             speed += accel;
-            rand = 500;
+            interval = 500;
             loop();          
-        }, rand);               
+        }, interval);               
 }
 
 function MoveShips()
