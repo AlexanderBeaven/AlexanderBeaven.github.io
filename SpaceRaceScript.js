@@ -134,12 +134,12 @@ function BackgroundScroll()
             {
                 back1mult *= 1.2;
                 back1left -= back1mult;
-                back1wid += back1mult * 2; 
+                back1wid += back1mult; 
             }
             else
             {
                 back1left -= 5;
-                back1wid += 5 * 2;
+                back1wid += 5;
             }
             backgrounds[i].style.left = back1left.toString() + "px";
             backgrounds[i].style.width = back1wid.toString() + "px";
@@ -151,12 +151,12 @@ function BackgroundScroll()
             {
                 back2mult *= 1.2;
                 back2left -= back2mult;
-                back2wid += back2mult * 2;             
+                back2wid += back2mult;             
             }
             else
             {
-                back2left -= 7;
-                back2wid += 7 * 2;       
+               back2left -= 7;
+                back2wid += 7;       
             }
             backgrounds[i].style.left = back2left.toString() + "px";
             backgrounds[i].style.width = back2wid.toString() + "px";          
@@ -168,12 +168,12 @@ function BackgroundScroll()
             {
                 back3mult *= 1.2;
                 back3left -= back3mult;
-                back3wid += back3mult * 2;
+                back3wid += back3mult;
             }
             else
             {
                 back3left -= 9;
-                back3wid += 9 * 2;              
+                back3wid += 9;              
             }
             backgrounds[i].style.left = back3left.toString() + "px";
             backgrounds[i].style.width = back3wid.toString() + "px";           
