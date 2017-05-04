@@ -55,15 +55,16 @@ function GameStarted() //user has clicked red circle
         ship2Left = 0;
         ship3Left = 0;
         ship4Left = 0;
+
         ship1Amt = 0;
         ship2Amt = 0;
         ship3Amt = 0;
         ship4Amt = 0;
+
         back1wid = window.innerWidth + 100;
         back2wid = window.innerWidth + 100;
         back3wid = window.innerWidth + 100;
         
-
         reset = false;
         running = true;
 
@@ -98,6 +99,7 @@ function Reset() //reset for new race
         back1left = 0;
         back2left = 0;
         back3left = 0;
+
         back1mult = 30;
         back2mult = 42;
         back3mult = 54;
@@ -109,12 +111,11 @@ function Reset() //reset for new race
             backgrounds[i].style.left = "0px";
         }
 
-        document.getElementById("message").style.visibility = "hidden";
-      
+        document.getElementById("message").style.visibility = "hidden"; 
     }
 }
 
-function BackgroundScroll()
+function BackgroundScroll() //move backgrounds with parallax to give illusion of movement and depth
 {
     if (!document.getElementById("ship1").classList.contains("transition"))
     {
@@ -126,7 +127,7 @@ function BackgroundScroll()
         document.getElementById("background2").classList.add("transition");
         document.getElementById("background3").classList.add("transition");
     }
-    //move backgrounds to give illusion of speed       
+         
     for (i = 0; i < backgrounds.length; i++) {
         if (i == 0)
         {
@@ -156,7 +157,7 @@ function BackgroundScroll()
             else
             {
                back2left -= 7;
-                back2wid += 7;       
+               back2wid += 7;       
             }
             backgrounds[i].style.left = back2left.toString() + "px";
             backgrounds[i].style.width = back2wid.toString() + "px";          
@@ -181,7 +182,7 @@ function BackgroundScroll()
     }
 }
 
-function loop()
+function loop() //loop runs every half second
 {    
         setTimeout(function ()
         {
@@ -207,8 +208,7 @@ function MoveShips()
         }
         ship1Left += amt;
         ship1Amt = amt;
-        document.getElementById("ship1").style.left = ship1Left.toString() + "px";
-        //document.getElementById("ship1").style.right = (document.getElementById("ship1").style.right - amt).toString() + "px";
+        document.getElementById("ship1").style.left = ship1Left.toString() + "px";    
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship2Amt) //ship can only gain speed
@@ -218,7 +218,6 @@ function MoveShips()
         ship2Left += amt;
         ship2Amt = amt;
         document.getElementById("ship2").style.left = ship2Left.toString() + "px";
-        //document.getElementById("ship2").style.right = (document.getElementById("ship2").style.right - amt).toString() + "px";
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship3Amt) //ship can only gain speed
@@ -228,7 +227,6 @@ function MoveShips()
         ship3Left += amt;
         ship3Amt = amt;
         document.getElementById("ship3").style.left = ship3Left.toString() + "px";
-       // document.getElementById("ship3").style.right = (document.getElementById("ship3").style.right - amt).toString() + "px";
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < ship4Amt) //ship can only gain speed
@@ -237,14 +235,13 @@ function MoveShips()
         }
         ship4Left += amt;
         ship4Amt = amt;
-        document.getElementById("ship4").style.left = ship4Left.toString() + "px";
-        //document.getElementById("ship4").style.right = (document.getElementById("ship4").style.right - amt).toString() + "px";          
+        document.getElementById("ship4").style.left = ship4Left.toString() + "px";     
     }
     else
     {
         running = false;
         document.getElementById("startButton").style.backgroundImage = "url(srimages/RedLight.png)";
-        document.getElementById("message").style.visibility = "visible"; //solid 2px #7AE7C7
+        document.getElementById("message").style.visibility = "visible";
         document.getElementById("message").style.border = "solid 2px #7AE7C7";
         document.getElementById("ship1img").src = "srimages/Ship1.png";
         document.getElementById("ship2img").src = "srimages/Ship2.png";
