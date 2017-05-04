@@ -47,7 +47,7 @@ function DynamicSizes() //resize and respace ships depending on screen size
 function GameStarted() //user has clicked red circle
 {
     if (!running && reset)
-    {      
+    {        
         speed = window.innerWidth / 50;
         finish = window.innerWidth - 100;
 
@@ -59,11 +59,7 @@ function GameStarted() //user has clicked red circle
         ship1Amt = 0;
         ship2Amt = 0;
         ship3Amt = 0;
-        ship4Amt = 0;
-
-        back1wid = window.innerWidth + 100;
-        back2wid = window.innerWidth + 100;
-        back3wid = window.innerWidth + 100;
+        ship4Amt = 0;       
         
         reset = false;
         running = true;
@@ -137,57 +133,60 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
         {
             if (running)
             {
-                back1mult *= 1.2;
-                back1left -= back1mult;
+                back1mult *= 1.25;
                 back1wid += back1mult;
+                back1left -= back1mult;              
             }
             else
             {
-                back1left -= 5;
                 back1wid += 5;
+                back1left -= 5;           
             }
             back1left = Math.round(back1left);
             back1wid = Math.round(back1wid);
-            backgrounds[i].style.left = back1left.toString() + "px";
             backgrounds[i].style.width = back1wid.toString() + "px";
+            backgrounds[i].style.left = back1left.toString() + "px";
+           
         }
 
         else if (i == 1)
         {
             if (running)
             {
-                back2mult *= 1.2;
-                back2left -= back2mult;
+                back2mult *= 1.25;
                 back2wid += back2mult;
+                back2left -= back2mult;
+                
             }
             else
             {
-               back2left -= 7;
                back2wid += 7;
+               back2left -= 7;           
             }
             back2left = Math.round(back2left);
             back2wid = Math.round(back2wid);
+            backgrounds[i].style.width = back2wid.toString() + "px";
             backgrounds[i].style.left = back2left.toString() + "px";
-            backgrounds[i].style.width = back2wid.toString() + "px";          
+                      
         }
 
         else if (i == 2)
         {
             if (running)
             {
-                back3mult *= 1.2;
-                back3left -= back3mult;
+                back3mult *= 1.25;
                 back3wid += back3mult;
+                back3left -= back3mult;             
             }
             else
             {
-                back3left -= 9;
-                back3wid += 9;              
+                back3wid += 9;
+                back3left -= 9;                        
             }
             back3left = Math.round(back3left);
             back3wid = Math.round(back3wid);
-            backgrounds[i].style.left = back3left.toString() + "px";
-            backgrounds[i].style.width = back3wid.toString() + "px";           
+            backgrounds[i].style.width = back3wid.toString() + "px";
+            backgrounds[i].style.left = back3left.toString() + "px";                 
         }
     }
 }
@@ -195,15 +194,13 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
 function loop() //loop runs every half second
 {    
         setTimeout(function ()
-        {
-            
+        {           
             if (running)
-            {
-                speed += accel;
+            {              
                 MoveShips();
-                BackgroundScroll();
+                speed += accel;
             }
-            
+            BackgroundScroll();
             interval = 500;
             loop();          
         }, interval);               
