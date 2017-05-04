@@ -103,6 +103,10 @@ function Reset() //reset for new race
         back1mult = 30;
         back2mult = 42;
         back3mult = 54;
+
+        back1wid = window.innerWidth + 100;
+        back2wid = window.innerWidth + 100;
+        back3wid = window.innerWidth + 100;
         
         interval = 0;
 
@@ -142,6 +146,8 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
                 back1left -= 5;
                 back1wid += 5;
             }
+            back1left = Math.round(back1left);
+            back1wid = Math.round(back1wid);
             backgrounds[i].style.left = back1left.toString() + "px";
             backgrounds[i].style.width = back1wid.toString() + "px";
         }
@@ -157,8 +163,10 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
             else
             {
                back2left -= 7;
-               back2wid += 7;       
+               back2wid += 7;
             }
+            back2left = Math.round(back2left);
+            back2wid = Math.round(back2wid);
             backgrounds[i].style.left = back2left.toString() + "px";
             backgrounds[i].style.width = back2wid.toString() + "px";          
         }
@@ -176,6 +184,8 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
                 back3left -= 9;
                 back3wid += 9;              
             }
+            back3left = Math.round(back3left);
+            back3wid = Math.round(back3wid);
             backgrounds[i].style.left = back3left.toString() + "px";
             backgrounds[i].style.width = back3wid.toString() + "px";           
         }
@@ -186,12 +196,11 @@ function loop() //loop runs every half second
 {    
         setTimeout(function ()
         {
-
             
             if (running)
-            {           
-                MoveShips();
+            {
                 speed += accel;
+                MoveShips();
                 BackgroundScroll();
             }
             
