@@ -135,7 +135,7 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
             {
                 back1mult *= 1.2;
                 back1left -= back1mult;
-                back1wid += back1mult; 
+                back1wid += back1mult * 2;
             }
             else
             {
@@ -152,7 +152,7 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
             {
                 back2mult *= 1.2;
                 back2left -= back2mult;
-                back2wid += back2mult;             
+                back2wid += back2mult * 2;
             }
             else
             {
@@ -169,7 +169,7 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
             {
                 back3mult *= 1.2;
                 back3left -= back3mult;
-                back3wid += back3mult;
+                back3wid += back3mult * 2;
             }
             else
             {
@@ -186,12 +186,15 @@ function loop() //loop runs every half second
 {    
         setTimeout(function ()
         {
+
+            
             if (running)
-            { 
+            {
+                BackgroundScroll();
                 MoveShips();
+                speed += accel;
             }
-            BackgroundScroll();
-            speed += accel;
+            
             interval = 500;
             loop();          
         }, interval);               
