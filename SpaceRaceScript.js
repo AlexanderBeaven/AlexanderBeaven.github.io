@@ -1,5 +1,6 @@
 var running = false;
 var reset = true;
+var shipsTurn = true;
 var ship1Left = 0;
 var ship2Left = 0;
 var ship3Left = 0;
@@ -133,7 +134,7 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
         {
             if (running)
             {
-                back1mult *= 1.25;
+                back1mult *= 1.22;
                 back1wid += back1mult;
                 back1left -= back1mult;              
             }
@@ -153,7 +154,7 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
         {
             if (running)
             {
-                back2mult *= 1.25;
+                back2mult *= 1.22;
                 back2wid += back2mult;
                 back2left -= back2mult;
                 
@@ -174,7 +175,7 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
         {
             if (running)
             {
-                back3mult *= 1.25;
+                back3mult *= 1.22;
                 back3wid += back3mult;
                 back3left -= back3mult;             
             }
@@ -193,15 +194,23 @@ function BackgroundScroll() //move backgrounds with parallax to give illusion of
 
 function loop() //loop runs every half second
 {    
-        setTimeout(function ()
-        {           
+    setTimeout(function ()
+    {
+        if (shipsTurn)
+        {
+            shipsTurn = false;
             if (running)
             {              
                 MoveShips();
                 speed += accel;
             }
+        }
+        else
+        {
+            shipsTurn = true;
             BackgroundScroll();
-            interval = 500;
+        }
+            interval = 250;
             loop();          
         }, interval);               
 }
